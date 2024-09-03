@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr-fr" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8" />
+	<base href="https://www.math93.com/lycee/nsi-1ere/nsi-1ere/146-pedagogie/lycee/nsi/998-nsi-numerique-et-sciences-informatiques-html-et-css-2.html" />
+	<meta name="keywords" content="PHP, HTML, Client-Serveur" />
+	<meta name="author" content="Super User" />
+	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="description" content="NSI (Numérique et Sciences Informatiques) : PHP et Interation Client-Serveur : Une présentation" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>NSI (Numérique et Sciences Informatiques) : PHP et Interation Client-Serveur : Présentation</title>
+	<link href="/templates/protostar_math93/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/plugins/system/jcemediabox/css/jcemediabox.css?1d12bb5a40100bbd1841bfc0e498ce7b" rel="stylesheet" />
+	<link href="/plugins/system/jcemediabox/themes/standard/css/style.css?50fba48f56052a048c5cf30829163e4d" rel="stylesheet" />
+	<link href="/templates/protostar_math93/css/template.css?8dde18732c0ed04b3a7a66541b64f5f7" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+	<link href="/templates/protostar_math93/css/user.css?8dde18732c0ed04b3a7a66541b64f5f7" rel="stylesheet" />
+	<link href="/modules/mod_nice_social_bookmark/css/nsb-opac-inv.css" rel="stylesheet" />
+	<link href="/media/mod_osdonate/css/style.css" rel="stylesheet" />
+	<style>
+.openSocialShareVerticalSharing {position: fixed;top:0px;left:0px;}
+	h1, h2, h3, h4, h5, h6, .site-title {
+		font-family: 'Open Sans', sans-serif;
+	}
+	body.site {
+		border-top: 3px solid #538207;
+		background-color: #f4f6f7;
+	}
+	a {
+		color: #538207;
+	}
+	.nav-list > .active > a,
+	.nav-list > .active > a:hover,
+	.dropdown-menu li > a:hover,
+	.dropdown-menu .active > a,
+	.dropdown-menu .active > a:hover,
+	.nav-pills > .active > a,
+	.nav-pills > .active > a:hover,
+	.btn-primary {
+		background: #538207;
+	}
+.nsb_container a.icons{
+	padding:px; float:left; display:inline-block;
+}#plusone{padding:px !important;}
+	</style>
+	<script src="/plugins/content/simplifiedsocialshare/simplifiedsocialshare.js"></script>
+	<script src="/media/jui/js/jquery.min.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/media/system/js/caption.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/media/jui/js/bootstrap.min.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/plugins/system/jcemediabox/js/jcemediabox.js?0c56fee23edfcb9fbdfe257623c5280e"></script>
+	<script src="/templates/protostar_math93/js/template.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script>
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:0,scrolling:"fixed",close:2,labels:{'close':'Fermer','next':'Suivant','previous':'Précédent','cancel':'Annuler','numbers':'{$current} sur {$total}'},cookie_expiry:"",google_viewer:0},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"standard",themecustom:"",themepath:"plugins/system/jcemediabox/themes",mediafallback:0,mediaselector:"audio,video"});
+	</script>
+	<!-- Start: Google Structured Data -->
+
+            <!-- End: Google Structured Data -->
+
+	<!--[if lt IE 9]><script src="/media/jui/js/html5.js"></script><![endif]-->
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34983880-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+<body class="site com_content view-article no-layout no-task itemid-1322">
+	<!-- Body -->
+	<div class="body">
+		<div class="container">
+			<!-- Header -->
+			<header class="header" role="banner">
+				<div class="header-inner clearfix">
+					<a class="brand pull-left" href="/">
+																<div class="site-description">Une Histoire des Mathématiques</div>											</a>
+					<div class="header-search pull-right">
+						<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script><form action="http://www.google.fr" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-4115507798205744:1851995435" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="50" />
+    <input type="submit" name="sa" value="Rechercher" />
+  </div>
+</form>
+
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  }
+})});
+</script><script>
+function compteur()
+    {
+    var c = 0;
+    return function incrementer(x=1)
+ {
+c=c+x;
+return c;
+ };
+    }
+
+var fonction = compteur();
+var proba = compteur();
+var suite = compteur();
+var espace = compteur();
+var repere = compteur();
+var ps=compteur();
+var sujet=compteur();
+var algo=compteur();
+var trigo=compteur();
+</script>
+					</div>
+				</div>
+			</header>
+
+								<div class="moduletable">
+
+
+
+		</div>
+
+			<div class="row-fluid">
+								<main id="content" role="main" class="span9">
+					<!-- Begin Content -->
+
+					<div id="system-message-container">
+	</div>
+
+					<div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="fr-FR" />
+
+
+
+
+
+
+
+				<div itemprop="articleBody">
+		<h1 style="text-align: left;">NSI - Numérique et Sciences Informatiques</h1>
+<h1 style="text-align: left;"><br /><strong>HTML (HyperText Markup Language) , <br />PHP <strong>Hypertext Preprocessor<br /></strong>et Interation Client-Serveur : Présentation<br /></strong></h1>
+<hr />
+<h2>1. <strong>Qu'est ce que PHP ? <br /></strong></h2>
+<hr />
+<p>Le<strong> PHP</strong>, acronyme récursif pour <strong>PHP</strong> <strong>Hypertext Preprocessor</strong> est un langage de scripts spécialement conçu pour le <strong>développement d'applications web</strong>.<br />Il peut être intégré facilement au HTML.</p>
+<p>Le langage PHP a été créé en 1994 par <strong>Rasmus Lerdorf</strong>,&nbsp;un programmeur groenlandais et canadien pour son site web personnel.</p>
+<h3>Un exemple de code PHP<a id="PHP-exemple1"></a></h3>
+<p>Un petit exemple en PHP qui</p>
+<ul>
+<li>Calcule la somme de deux varariables, $var1=5 et&nbsp; $var2=7 ;</li>
+<li>Affiche la somme  avec la fonction <code data-claire-semantic="text">echo</code> ;</li>
+<li>Calcule et affiche la somme de deux entiers choisis aléatoirement entre 1 et 100, avec la fonction <code data-claire-semantic="text">rand(1 , 100)</code>.</li>
+</ul>
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;">&lt;!doctype html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;
+   Exemple de variables
+  &lt;/title&gt;
+  &lt;meta charset="utf-8"/&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;h1&gt; Un premier programme en PHP : pour les tests&lt;/h1&gt;
+
+ <span style="color: #557799;">&lt;?php</span>
+  <span style="color: #888888;">// Commentaires en php	</span>
+  <span style="color: #888888;">// Utilisation de variables, avec le dollar $</span>
+        <span style="color: #996633;">$var1</span><span style="color: #333333;">=</span><span style="color: #0000dd; font-weight: bold;">5</span>;
+        <span style="color: #996633;">$var2</span><span style="color: #333333;">=</span><span style="color: #0000dd; font-weight: bold;">7</span>;
+	<span style="color: #996633;">$somme</span><span style="color: #333333;">=</span><span style="color: #996633;">$var1</span><span style="color: #333333;">+</span><span style="color: #996633;">$var2</span>;
+
+	<span style="color: #888888;">// echo permet d'afficher sur la page</span>
+	<span style="color: #888888;">// On peut méler du texte et des variables </span>
+	<span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;p&gt;La somme de </span><span style="background-color: #eeeeee;">$var1</span><span style="background-color: #fff0f0;"> et </span><span style="background-color: #eeeeee;">$var2</span><span style="background-color: #fff0f0;"> est </span><span style="background-color: #eeeeee;">$somme</span><span style="background-color: #fff0f0;">.&lt;/p&gt;"</span>;
+
+	<span style="color: #996633;">$nombre1</span><span style="color: #333333;">=</span>rand(<span style="color: #0000dd; font-weight: bold;">1</span>,<span style="color: #0000dd; font-weight: bold;">100</span>); <span style="color: #888888;">// rand(a,b) génère un entier aléatoire entre a et b (inclus)</span>
+
+	<span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;p&gt;Le 1er nombre choisi au hasard est </span><span style="background-color: #eeeeee;">$nombre1</span><span style="background-color: #fff0f0;">.&lt;/p&gt;"</span>;
+	<span style="color: #996633;">$nombre2</span><span style="color: #333333;">=</span>rand(<span style="color: #0000dd; font-weight: bold;">1</span>,<span style="color: #0000dd; font-weight: bold;">100</span>);
+	<span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;p&gt;Le 2e nombre choisi au hasard est </span><span style="background-color: #eeeeee;">$nombre2</span><span style="background-color: #fff0f0;">.&lt;/p&gt;"</span>;
+
+	<span style="color: #996633;">$somme</span><span style="color: #333333;">=</span><span style="color: #996633;">$nombre1</span><span style="color: #333333;">+</span><span style="color: #996633;">$nombre2</span>;
+	<span style="color: #888888;">// On affiche la somme</span>
+	<span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;p&gt;La somme de </span><span style="background-color: #eeeeee;">$nombre1</span><span style="background-color: #fff0f0;"> et </span><span style="background-color: #eeeeee;">$nombre2</span><span style="background-color: #fff0f0;"> est </span><span style="background-color: #eeeeee;">$somme</span><span style="background-color: #fff0f0;">.&lt;/p&gt;"</span>;
+ <span style="color: #557799;">?&gt;</span>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<p>&nbsp;</p>
+<ul>
+<li><strong>Visualiser le résultat</strong><br />Un lien vers le fichier hébergé sur un serveur distant : <a href="http://jerome.courtois2.free.fr/NSI_premiere/PHP/PHP-Exemple1.php">PHP-Exemple1.php</a>.<br />&nbsp;</li>
+</ul>
+<p><strong>Premières remarques sur le PHP</strong></p>
+<ul>
+<li>L'affichage en PHP utilise la fonction <code data-claire-semantic="text">echo " texte et $variables "</code>. <br />On peut afficher du texte et des variables $var simultanément très simplement.</li>
+<li>Les lignes se terminent par un point virgule&nbsp; <code data-claire-semantic="text">;</code>.</li>
+<li>Les variables se définissent avec le dollard <code data-claire-semantic="text"> $var1&nbsp;</code> et peuvent s'intégrer facilement au texte.</li>
+</ul>
+<h4>Petit exercice important</h4>
+<ol>
+<li><strong>Affichez le code source</strong> (Click droit) de la page <a href="http://jerome.courtois2.free.fr/NSI_premiere/PHP/PHP-Exemple1.php">PHP-Exemple1.php</a>.</li>
+<li>Vous remarquez que le code source propose juste l'affichage, <strong>sans les lignes de code PHP</strong>.</li>
+<li><strong>Actualisez la page</strong>, on voit que le contenu change car la fonction <code data-claire-semantic="text">rand(1 , 100)</code> est appelée.</li>
+<li>C'est magique, le client, c'est à dire notre ordinateur ne s'aperçoit pas qu'il y a un calcul d'effectué.</li>
+</ol>
+<p>&nbsp;</p>
+<h3>Un fonctionnement distant</h3>
+<ul>
+<li>Le <strong>PHP</strong> fonctionne en fait sur <strong>serveur distant</strong>. <br />On ne peut pas avoir un fonctionnement immédiat sur notre disque comme avec le <strong>HTML</strong>, le <strong>CSS</strong> ou le <strong>JavaScript</strong>.<br />&nbsp;&nbsp;</li>
+<li>Ce qui distingue <strong>PHP</strong> des langages de script comme le <strong>Javascript</strong>, est que <strong>le code est exécuté sur le serveur</strong>, générant ainsi le <strong>HTML</strong>, qui sera ensuite envoyé au client. Le client ne reçoit que le résultat du script, sans aucun moyen d'avoir accès au code qui a produit ce résultat. Vous pouvez configurer votre serveur web afin qu'il analyse tous vos fichiers HTML comme des fichiers PHP. Ainsi, il n'y a aucun moyen de distinguer les pages qui sont produites dynamiquement des pages statiques.<br />&nbsp;</li>
+<li>le serveur doit donc être capable de repérer les parties de codes <strong>PHP</strong>, cela se fera grâce à des <strong>balises</strong>.<br />Le <strong>code PHP</strong> est donc inclus entre une balise de début <code data-claire-semantic="text"> &lt;?php </code> et une balise de fin <code> ?&gt;  </code> qui permettent au <strong>serveur web</strong> de passer en mode <strong>PHP</strong>, ce que ne fait pas votre navigateur sur votre disque dur.</li>
+</ul>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" title="Interaction Client-Serveur : HTML et PHP" src="http://jerome.courtois2.free.fr/NSI_premiere/PHP/client-serveur-HTML_PHP.png" alt="client serveur HTML PHP" width="500" height="146" /></p>
+<h3>Le fonctionnement du PHP</h3>
+<p>Vous pouvez maintenant tranquillement lire cette page qui expose le fonctionnement du PHP.</p>
+<ul>
+<li><strong>Openclassrooms</strong> : <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237646-decouvrez-le-fonctionnement-dun-site-ecrit-en-php">Fonctionnement d'un site écrit en PHP<br /></a></li>
+</ul>
+<p>&nbsp;</p>
+<h2 class="part-title" itemprop="name" data-part-title="Transmettez des données avec l'URL">2. Préparez votre environnement de travail</h2>
+<hr />
+<p>Il va donc nous falloir préparer un environement de travail afin de pouvoir lire les fichiers <strong>PHP</strong>.</p>
+<p>Plusieurs solutions sont possibles, si vous avez déjà un site en ligne, tout sera plus facile, sinon, vous allez devoir installer plusieurs émulateurs de serveurs distants.</p>
+<h3>Cas 1 : j'ai un site en ligne</h3>
+<ul>
+<li>Si vous avez <strong>un site en ligne</strong>, tout est très simple, il vous suffit d'envoyer vos fichiers sur votre espace et de les ouvrir via votre navigateur. Chaque site à un interpréteur <strong>PHP</strong>.</li>
+<li>Pour télécharger facilement vos fichiers, vous pouvez :&nbsp;
+<ul>
+<li>Soit vous connecter chez votre hébergeur ;</li>
+<li>Soit utiliser un client FTP. Je vous conseil d'installer <a href="https://filezilla-project.org/">FileZilla</a>, gratuit et très simple d'utilisation.&nbsp;<br />Il vous faudra cependant récuprérer chez votre hébergeur<strong> vos identifiants de connexion</strong>. C'est un peu long la première fois mais ensuite c'est très rapide.</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://filezilla-project.org/"><img style="width: 144px; height: 72px; display: block; margin-left: auto; margin-right: auto;" src="/images/images_doc/nsi/filezilla-logo-600x300.jpg" alt="filezilla logo 600x300" data-mce-width="144" data-mce-height="72" /></a></p>
+<h3>Cas 2 : je veux installer un serveur en local</h3>
+<p>Deux principaux serveurs sont utilisés :&nbsp;</p>
+<ul>
+<li><a href="http://www.wampserver.com/">WAMP Server ;&nbsp;</a></li>
+<li>et <a href="https://www.apachefriends.org/fr/index.html">XAMPP Serveur</a>.</li>
+</ul>
+<p>Vous pouvez consulter le tutoriel d'Openclassrooms.</p>
+<ul>
+<li><strong>Openclassrooms</strong> : <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/4237816-preparez-votre-environnement-de-travail">Préparez votre environnement de travail</a>.<br />On vous décrit les étapes afin de préparer votre environement de travail.<br /><br /></li>
+</ul>
+<h4>Quelques remarques post Installation</h4>
+<ul>
+<li>&nbsp;Il ne suffit pas d'ouvrir un fichier avec son navigateur pour que cela fonctionne, on doit généralement lancer l'émulateur puis tapper dans son navigateur :</li>
+</ul>
+<p style="text-align: center;"><strong>http://localhost/MonFichier.php</strong></p>
+<ul>
+<li><strong>WampServeur</strong>
+<ul>
+<li>Création automatique d’un répertoire « www » lors de l’installation (typiquement c:\wamp\www).</li>
+<li>Créez un sous répertoire pour votre projet et déposez-y vos fichiers PHP</li>
+<li>Cliquez sur le lien « Localhost » du menu de WampServer ou ouvrez votre navigateur à l’adresse :</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: center;"><strong><strong>http://localhost/MonFichier.php</strong><br /></strong></p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><strong>Bases de données.</strong><br />Au lancement de PhpMyAdmin, il vous sera demandé un nom utilisateur et un mot de passe. <br />Après installation de Wampserver 3,
+<ul>
+<li>le nom utilisateur par défaut est "root" (Sans les guillemets)</li>
+<li>et il n'y a pas de mot de passe, ce qui veut dire que vous devez laisser la case Mot de passe du formulaire d'accès vide.<br />&nbsp;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Xampp</strong>
+<ul>
+<li>Placer les projets dans le dossier <strong>htdocs</strong> qui est dans <strong>C:\xampp\htdocs</strong></li>
+<li>Pour ouvrir un fichier nommé <strong>MonFichier.php</strong> qui est dans le répertoire&nbsp;<strong>htdocs</strong>, tapper dans votre navigateur :</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: center;"><strong>http://localhost/MonFichier.php</strong></p>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li><strong>Bases de données.<br /></strong>Pour accéder à la base de données<br /> =&gt; Admin Mysql</li>
+</ul>
+</li>
+</ul>
+<h3>Cas 3 : j'utilise <a  target="_blank" href="https://replit.com">repl.it</a> creation PHP web server</h3>
+C'est vraiment pour une toute petite utilisation qui sera suffisante pour l'apprentissage niveau lycée.
+<p>&nbsp;</p>
+<h2 class="part-title" itemprop="name" data-part-title="Transmettez des données avec l'URL">3. Un test puis les exercices et travaux dirigés</h2>
+<hr />
+<ul>
+<li>Recopier le code source de l'<a href="http://jerome.courtois2.free.fr/NSI_phpIntro.html#PHP-exemple1">exemple 1</a>, enregistrez-le sur votre disque dur avec l'extension <strong>.php</strong> et ouvrez-le dans votre navigateur .... suspens !</li>
+</ul>
+<p>&nbsp;</p>
+<h2 class="part-title" itemprop="name" data-part-title="Transmettez des données avec l'URL">4. Les travaux dirigés</h2>
+<hr />
+<p>Si tout fonctionne, on est prêt pour les premiers exercices.&nbsp; Suivez le td sur la page :</p>
+<ul>
+<li><strong>TD</strong> : <a href="http://jerome.courtois2.free.fr/NSI_phpTD.html">HTML, PHP et Interation Client-Serveur : exercices et applications aux formulaires</a>.</li>
+</ul>
+<p>&nbsp;</p>
+<h2 style="text-align: left;">Articles Connexes&nbsp;</h2>
+<hr />
+<p><ul class="relateditems">
+<li>
+	<a href="/lycee/nsi-1ere/nsi-1ere/146-pedagogie/lycee/nsi/999-nsi-numerique-et-sciences-informatiques-html-php-et-interation-client-serveur-exercices-et-applications.html">
+				NSI (Numérique et Sciences Informatiques) : HTML, PHP et Interation Client-Serveur : exercices et applications</a>
+</li>
+</ul>
+</p>	</div>
+
+
+
+				</main>
+									<div id="aside" class="span3">
+						<!-- Begin Right Sidebar -->
+					</div>
+					</div>
+							</div>
+		</div>
+	</div>
+	<!-- Footer -->
+
+
+</body>
+</html>

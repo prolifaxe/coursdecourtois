@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+	<title>recup nom pc js</title>
+
+</head>
+<body>
+   Nom du pc : <script >
+   function getIPAddress() {
+  
+  var interfaces = require('os').networkInterfaces();
+  for (var devName in interfaces) {
+    var iface = interfaces[devName];
+
+    for (var i = 0; i < iface.length; i++) {
+      var alias = iface[i];
+      if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal)
+        return alias.address;
+    }
+  }
+
+     return '0.0.0.0';
+}
+document.write(getIPAddress());
+  </script>
+
+</body>
+</html>

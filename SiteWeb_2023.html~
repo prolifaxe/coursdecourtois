@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html><head>
+
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"><title>Site des élèves</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css"></head><body style="background: white none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+
+    <!--logo cliquable
+	<a href="index.html"> <img class="logo" src="p.png" onmouseout="this.src='p.png';" onmouseover="this.src='retouralac.png';" />  </a>
+-->
+		<h1> LISTE DES SITES WEB  DES ELEVES DE PREMIERE 2022/2023</h1>
+
+		<center>
+  <div class="tableaux">
+		Groupe 102-103
+   
+
+			<table border="1">
+     <thead border="1">
+
+				<th border="1"> &nbsp; les differents auteurs &nbsp;&nbsp;&nbsp;&nbsp; </th>
+				<th> &nbsp; &nbsp; Le thème et le lien &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+			</thead>
+
+			<tbody>
+				<tr>
+					<td><span style="font-weight: bold;">Paul et Raphael</span><br>
+</td>
+
+					<td><a href="https://animcritique.metacraft.repl.co/index.html">Sur les animes</a><br>
+</td>
+        </tr>
+
+				<tr>
+					<td><strong>Adam et Djibrill</strong><br>
+</td>
+					<td> <a href="https://naruto-fansite-djibril-adam.djibzzz.repl.co/index.html">Sur Naruto<br>
+</a></td>        </tr>
+
+				<tr>
+					<td><strong>Inés et Line</strong><br>
+</td>
+					<td> <a href="https://site2.liiine.repl.co/">Sur la NBA </a></td>        </tr>
+
+				<tr>
+					<td><strong>Thessa, Nine et Mei-Lin </strong><br>
+</td>
+					<td> <a href="https://projet-html.mei11ncls.repl.co/">Cours de mathématiques de premiére</a><img src="coeur.jpeg" ></td>        </tr>
+
+				<tr cellspacing="1">
+					<td><span style="font-weight: bold;">Rémi et Lucien</span><br>
+</td>
+					<td> <a href="https://janvier.lulucienfirst.repl.co/#sources">Sur Janvier ?</a><br>
+</td>        </tr>
+
+          <tr cellspacing="1">
+  					<td><span style="font-weight: bold;">Lenny, Julien et Clément</span><br>
+</td>
+  					<td> <a href="https://destination-de-reve.lznn298765.repl.co/"> Sur des voyages à l'étranger<br>
+</a></td>        </tr>
+
+            <tr cellspacing="1">
+    					<td><strong>Alexis et Janis<br>
+ </strong></td>
+    					<td> <a href="https://projet-janda.k4rat.repl.co/"> Sur les phrases d'accroche </a> <img src="coeur.jpeg" ></td>        </tr>
+
+              <tr cellspacing="1">
+      					<td><strong> Emeric et Eden </strong><br>
+</td>
+      					<td> <a href="https://cinetoch.azoxx.repl.co/">Cinéma</a></td>        </tr>
+
+                <tr cellspacing="1">
+        					<td><strong> Nathan et Thomas  </strong><br>
+</td>
+        					<td> <a href="https://nathanthomasnsi.nathanmartins07.repl.co/">Le Kebab</a></td>        </tr>
+
+                  
+  <tr cellspacing="1">
+        					<td><strong> Belkis </strong><br>
+</td>
+        					<td> <a href="https://mon-site.blks.repl.co/">Vidéo et cinéma ??</a></td>        </tr>
+
+                  
+
+                    
+
+                      
+
+                        
+
+                          
+
+                            
+
+                              
+
+		</tbody>
+	</table>
+</div>
+
+
+<div class="tableaux">
+  Groupe 106-107
+
+    <table border="1">
+   <thead border="1">
+
+      <th border="1"> &nbsp; les differents auteurs &nbsp;&nbsp;&nbsp;&nbsp; </th>
+      <th> &nbsp; &nbsp; Le thème et le lien &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+    </thead>
+
+    <tbody>
+      <tr>
+        <td><strong>Clément, Maxime et Corentin  <br>
+      </strong></td>
+
+        <td> <a href="https://home.clemkng17.repl.co/index.html">Salle de sport</a></td>
+      </tr>
+
+      <tr>
+        <td><span style="font-weight: bold;">Victor</span><br>
+</td>
+        <td> <a href="https://theaveron.github.io/Wikispace/index.html">Systéme solaire</a><img src="coeur.jpeg" ></td>        </tr>
+
+      <tr>
+        <td><strong>Mokaïl et </strong><span style="font-weight: bold;">Mathis</span><br>
+</td>
+        <td> <a href="https://projet-cinema.mathislaviolett.repl.co/">Cinéma </a></td>        </tr>
+
+      <tr>
+        <td><strong>Ombeline, Antoine et Leonille</strong><br>
+</td>
+        <td> <a href="https://00musika00.glitch.me/index.html">Instruments de musique</a><img src="coeur.jpeg" ></td>        </tr>
+
+      <tr cellspacing="1">
+        <td><strong> Barnabé et Andrea </strong><br>
+</td>
+        <td> <a href="https://meme-rewind2022.glitch.me/index.html">Sur les mémes</a><img src="coeur.jpeg" ></td>        </tr>
+
+        <tr cellspacing="1">
+          <td><strong> Baptiste et&nbsp; Giraud </strong><br>
+</td>
+          <td> <a href="%20https://wrathfulcourageouswifi.nodray.repl.co/">Avions de chasse de la 2ème guerre mondiale<br>
+</a><img src="coeur.jpeg" ></td>        </tr>
+
+          <tr cellspacing="1">
+            <td><strong> Noah , Guanwen et Rayan </strong><br>
+</td>
+            <td><a href="https://tennis.thegeek06.repl.co/">Sur un club de sport</a></td>        </tr>
+
+            <tr cellspacing="1">
+              <td><strong> Emile, Massil et Julien  </strong><br>
+</td>
+              <td> <a href="https://dm-nsi-site-html.julienmorchain.repl.co/"><span style="text-decoration: underline;">Avatars</span></a><br>
+</td>        </tr>
+
+           <tr cellspacing="1">
+                <td><strong>  Julien</strong><br>
+</td>
+                <td> <a href="http://cdi-vd.pixel-games.ovh/">Site pour le CDI</a></td>        </tr>
+
+                <tr cellspacing="1">
+                  <td><strong> Adam et Renan</strong><br>
+</td>
+                  <td> <a href="https://site-web-projet.adamzelisko.repl.co/">Instruments de musique<br>
+</a><img src="coeur.jpeg" ></td>        </tr>
+
+  </tbody>
+</table>
+</div>
+	</center>
+
+  </body></html>
