@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Dichotomie</title><!titre de l'onglet>
+</head>
+
+<body>
+<h1>Je choisi un nombre entre 0 et 100. D'aprés vous quel est-il ?</h1>
+
+<FORM>
+ <input type="text" name="Valeur_Reponse" id="Id_Reponse" value="" />
+ <input type="button" value="Valider" onclick="MaFonction();" />
+</FORM>
+<p id="ICI3" > </p>
+<p id="ICI4" ></p>
+<h2 id="ICI5" ></h2>
+<h2 id="ICI6" ></h2>
+</body>
+<script >//envoi d'un programme javasrcipt
+var count=0;
+var choix=Math.floor(Math.random() * (100));
+<!--document.getElementById('ICI4').innerHTML=choix;-->
+function MaFonction()
+{
+    var reponse = document.getElementById("Id_Reponse").value; // Pour récupérer la valeur entrée
+	
+	if (reponse<choix)
+				{document.getElementById('ICI3').innerHTML= 'Mon nombre est plus grand que '+reponse;
+				count++;
+				}
+				
+	else{
+		if(reponse>choix){
+			document.getElementById('ICI4').innerHTML= 'Mon nombre est plus petit que '+reponse;
+			count++;
+		}
+		else{
+			count++;
+			document.getElementById('ICI5').innerHTML= 'Bien trouvé, mon nom nombre est bien ' +choix;
+		}
+	}
+	document.getElementById('ICI6').innerHTML= 'Essai numero ' +count;
+}
+</script>
+</html>

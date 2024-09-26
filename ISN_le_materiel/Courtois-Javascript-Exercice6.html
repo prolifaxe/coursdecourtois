@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>mon premier Quizz</title><!titre de l'onglet>
+</head>
+
+<body>
+<h1>Un QUIZZ en HTML</h1>
+<p id="ICI0" > </p>
+<h2>Premiére question</h2>
+le nombre 8 (en base 10) s'écrit 1000 en base 2 
+ <input type ="button" value="Vrai" onclick="reponse1()"/>
+ <input type ="button" value="faux" onclick="reponse2()"/>
+<p id="ICI" > </p>
+<h2>Deuxxieme question</h2>
+La representation binaire de la fraction 11/16 est 
+<select id="choix" name="lang" onchange="selection()">
+<option value=1> choisir la bonne reponse  </option>
+<option value=2> 0,1001  </option>
+<option value=3> 0,1010  </option>
+<option value=4> 0,1011 </option>
+</select>
+<p id="ICI2" > </p>
+<h2>trosiéme question</h2>
+Convertir le nombre 1001 écrit en base 2 en base 10
+<FORM>
+ <input type="text" name="Valeur_Reponse" id="Id_Reponse" value="" />
+ <input type="button" value="Valider" onclick="MaFonction();" />
+</FORM>
+<p id="ICI3" > </p>
+<h2 id="ICI4" ></h2>
+</body>
+<script >//envoi d'un programme javasrcipt
+var count=0;
+var rep1=false,rep2=false,rep3=false,fin=false;
+function messageErreur(){
+document.getElementById('ICI4').innerHTML= 'On ne peut repondre qu\'une seule fois '
+}
+function messageBonResultat(){
+	count++;
+	document.getElementById('ICI0').innerHTML= 'Votre résultat est '+count ;
+}
+function messageBadResultat(){
+	document.getElementById('ICI0').innerHTML= 'Votre résultat est '+count ;
+}
+function Resultatfinal(){
+	document.getElementById('ICI4').innerHTML= 'Le quizz est terminé vous avez '+count+ ' points' ;
+	fin=true;
+}
+function reponse1(){
+	if (rep1==false){
+		document.getElementById('ICI').innerHTML= 'Bonne reponse';
+		messageBonResultat();
+		rep1=true;
+	}else{
+		messageErreur();
+	}
+	if(rep1==true && rep2==true && rep3==true){
+		Resultatfinal();
+	}
+}
+function reponse2(){
+	if (rep1==false){
+		document.getElementById('ICI').innerHTML= 'Mauvaise reponse' ;
+		messageBadResultat();
+		rep1=true;
+	}else{
+		messageErreur();
+	}
+	
+	if(rep1==true && rep2==true && rep3==true){
+		Resultatfinal();
+	}
+}
+function selection(){
+	var selecteur = document.getElementById("choix");
+    var monChoix=selecteur[selecteur.selectedIndex].value;
+	if (rep2==false){
+		if(monChoix==4){
+				document.getElementById('ICI2').innerHTML= 'Bonne reponse' ;
+				messageBonResultat();
+		}else{
+				document.getElementById('ICI2').innerHTML= 'Mauvaise reponse';
+		}
+		rep2=true;
+	}	
+	else{
+			messageErreur();
+	}
+	
+	if(rep1==true && rep2==true && rep3==true){
+		Resultatfinal();
+	}
+}
+
+function MaFonction()
+{
+    var reponse = document.getElementById("Id_Reponse").value; // Pour récupérer la valeur entrée
+    if (rep3==false){
+		if (reponse==9)
+				{document.getElementById('ICI3').innerHTML= 'Bonne réponse';
+				messageBonResultat();
+				}
+				
+		else 
+			{document.getElementById('ICI3').innerHTML= 'mauvaise réponse';}
+		rep3=true;
+	}
+	else{
+			messageErreur();
+	}
+	
+	if(rep1==true && rep2==true && rep3==true){
+		Resultatfinal();
+		return;
+	}
+}
+</script>
+</html>
