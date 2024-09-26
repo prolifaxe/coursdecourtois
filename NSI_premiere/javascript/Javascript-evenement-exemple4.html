@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+
+<html>
+<head>
+    <title>Les évènement en HTML/JavaScript : Un petit formulaire</title>
+</head>
+
+<body>
+<!------------------------------------------------->
+<h2> Les évènement en HTML/JavaScript : Un petit formulaire</h2>
+
+<!------------------------------------------------->
+
+<!------------------------------------------------->
+Donnez un entier entre 1 et 4, je vais vous le traduire en anglais :
+<FORM>
+ <input type="text" name="Valeur_Reponse" id="Id_Reponse" value="" />
+ <input type="button" value="Valider" onclick="MaFonction();" />
+</FORM>
+
+<!--------On affichera le réslutat ici------------->
+<p id='resultat'>S'écrit en anglais :</p>
+<!------------------------------------------------->
+
+<script>
+function MaFonction()
+{
+    var reponse = document.getElementById("Id_Reponse").value; // Pour récupérer la valeur entrée
+
+	if (reponse=='1')
+        {document.getElementById('resultat').innerHTML= 'one';}
+    else if  (reponse=='2')
+	    {document.getElementById('resultat').innerHTML= 'two';}
+	else if  (reponse=='3')
+	    {document.getElementById('resultat').innerHTML= 'three';}
+	else if  (reponse=='4')
+	    {document.getElementById('resultat').innerHTML= 'four';}
+	else
+	    {document.getElementById('resultat').innerHTML= 'Je ne comprend pas';}
+
+}
+</script>
+
+
+
+
+<!------------------------------------------------->
+</body>

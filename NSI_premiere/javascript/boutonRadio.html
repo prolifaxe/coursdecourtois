@@ -1,0 +1,43 @@
+
+<html>
+<head>
+  <meta charset="utf-8" />
+    <title>TD Javascipt</title>
+</head>
+<body>
+  <center>
+    <h3>Boutons Radios</h3>
+<form>
+   <input type="radio" id="huey" name="drone" value="toto" checked />
+   <label for="huey">toto</label>
+
+   <input type="radio" id="dewey" name="drone" value="titi" />
+   <label for="dewey">titi</label>
+
+   <input type="radio" id="louie" name="drone" value="tata" />
+   <label for="louie">tata</label>
+
+ </form>
+
+ <button type="submit" onclick="afficher()")>Envoyer</button>
+    </center>
+<h1 >Vous avez choisi <span id="ICI"></span></h1>
+
+
+ <script>
+function afficher(){
+
+  var radios = document.getElementsByName('drone');
+  var valeur;
+  for(var i = 0; i < radios.length; i++){
+     if(radios[i].checked){
+        valeur = radios[i].value;
+
+         document.getElementById('ICI').innerHTML=valeur;
+     }
+   }
+
+}
+  </script>
+</body>
+</html>

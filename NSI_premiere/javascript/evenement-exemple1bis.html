@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+
+<html>
+<head>
+    <title>Les évènements en javaScript : Exemple 1bis</title>
+</head>
+<body>
+<h2> Des  boutons </h2>
+<h3>1. Un premier bouton qui affiche la date</h3>
+
+<!--un premier bouton-->
+<button  type="button"   onclick="document.getElementById('demo').innerHTML=Date()" >
+Cliquez sur le bouton 1 </button>
+<!--  -->
+
+<!--La balise id="demo" permet d'identifier un élément de la page-->
+<p id="demo">C'est ici</p>
+<!--  -->
+
+<h3>2. Un autre bouton qui modifie du contenu HTML</h3>
+
+<p> On va modifier le contenu de la balise HTML de paragraphe nommée "ICI" (grâce à l'identifiant id="ICI"). Il change sous vos yeux.
+</p>
+
+<!--La balise id="ICI" permet d'identifier un autre élément de la page-->
+<p id="ICI" >  Ici la balise HTML nommée ICI : On va changer ce texte. </p>
+<!--  -->
+
+<!--un autre bouton-->
+<button  type="button"   onclick="document.getElementById('ICI').innerHTML= 'On change' " >
+Cliquez sur le bouton 2</button>
+<!--  -->
+</body>

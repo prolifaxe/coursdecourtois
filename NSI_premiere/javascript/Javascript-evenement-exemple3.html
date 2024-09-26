@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+
+<html>
+<head>
+    <title>Les évènements en javaScript : Exemple 3</title>
+</head>
+<body>
+<select id="choix" name="lang" onchange="selection()">
+<option value="fr"> Français </option>
+<option value="zh"> Chinois </option>
+<option value="it"> Italien </option>
+</select>
+
+<script>
+ function selection()
+ {
+    const selecteur = document.getElementById("choix");
+	const monChoix=selecteur[selecteur.selectedIndex];
+	alert('Vous avez choisi la valeur = ' + monChoix.value + ' , soit le choix = ' + monChoix.text);
+  }
+</script>
+</body>
