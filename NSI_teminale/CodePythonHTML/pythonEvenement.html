@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Téléchargements/toto.py.html</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim8.1_v1">
+<meta name="syntax" content="python">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,expand_tabs,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+.PreProc { color: #c000c0; }
+.Comment { color: #0000c0; }
+.Constant { color: #c00000; }
+.Identifier { color: #008080; }
+.Statement { color: #af5f00; }
+--> 
+</style>
+</head>
+<body>
+<pre id='vimCodeElement'>
+<span class="PreProc">import</span> pygame
+pygame.init() <span class="Comment">#lancement de pygame</span>
+width ,height=<span class="Constant">800</span>,<span class="Constant">600</span>  <span class="Comment">#Taille de la fenetre</span>
+monEcran=pygame.display.set_mode((width ,height )) <span class="Comment">#Affichage de la fenêtre</span>
+
+jeu_en_cours=<span class="Identifier">True</span>
+n=<span class="Constant">0</span>
+down=<span class="Identifier">False</span>
+<span class="Statement">while</span> jeu_en_cours==<span class="Identifier">True</span>:
+    pygame.display.update()
+    monEcran.fill((<span class="Constant">100</span>,<span class="Constant">40</span>,<span class="Constant">70</span>))
+
+    <span class="Comment">#Un exemple de mouvement</span>
+
+    pygame.draw.line(monEcran,(<span class="Constant">0</span>,<span class="Constant">0</span>,<span class="Constant">0</span>),(<span class="Constant">0</span>,<span class="Constant">300</span>),(n%<span class="Constant">800</span>,<span class="Constant">300</span>),<span class="Constant">10</span>)
+    n=n+<span class="Constant">1</span>
+    <span class="Statement">if</span> down==<span class="Identifier">True</span>:
+        pygame.draw.line(monEcran,(<span class="Constant">0</span>,<span class="Constant">0</span>,<span class="Constant">0</span>),(<span class="Constant">300</span>,<span class="Constant">0</span>),(<span class="Constant">300</span>,n%<span class="Constant">600</span>),<span class="Constant">10</span>)
+    n=n+<span class="Constant">1</span>
+    <span class="Statement">for</span> evenement <span class="Statement">in</span> pygame.event.get():<span class="Comment"># Boucle sur les evenements</span>
+        <span class="Statement">if</span> evenement.type==pygame.QUIT: <span class="Comment"># &quot;appuyer sur le bouton quitter&quot;</span>
+            pygame.quit()  <span class="Comment">#arret de pygame</span>
+            jeu_en_cours=<span class="Identifier">False</span> <span class="Comment">#arret de la boucle</span>
+        <span class="Statement">if</span> evenement.type==pygame.KEYDOWN:<span class="Comment"># Appuis sur une fleche</span>
+            down=<span class="Identifier">True</span>
+        <span class="Statement">else</span>:
+            down=<span class="Identifier">False</span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

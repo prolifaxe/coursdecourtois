@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Dropbox/Lycee/NSI_Commun/NSI_Terminale/CalculParalle/multiprocess.py.html</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim8.1_v1">
+<meta name="syntax" content="python">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,expand_tabs,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+.PreProc { color: #c000c0; }
+.Comment { color: #0000c0; }
+.Constant { color: #c00000; }
+.Special { color: #c000c0; }
+.Identifier { color: #008080; }
+.Statement { color: #af5f00; }
+-->
+</style>
+</head>
+<body>
+<pre id='vimCodeElement'>
+<span class="PreProc">import</span> numpy <span class="Statement">as</span> np
+<span class="PreProc">from</span> multiprocessing <span class="PreProc">import</span> Pool
+<span class="PreProc">import</span> time
+
+<span class="PreProc">from</span> mafonction <span class="PreProc">import</span> func1
+
+nbThread=<span class="Constant">8</span>
+nbCalculs=<span class="Constant">600</span>
+
+
+<span class="Statement">def</span> <span class="Identifier">func2</span>(n, parallel=<span class="Identifier">False</span>):
+    <span class="Constant">&quot;&quot;&quot;</span><span class="Constant">Cacul le resultat de func1 pour des valeurs de 1 à n parallélement ou non</span><span class="Constant">&quot;&quot;&quot;</span>
+    my_array = np.zeros((n))
+
+    <span class="Comment"># Parallelized version:</span>
+    <span class="Statement">if</span> parallel:
+        pool = Pool(processes=nbThread)
+        <span class="Comment">####### HERE COMES THE CHANGE ####### </span>
+        results = [pool.apply_async(func1, [val]) <span class="Statement">for</span> val <span class="Statement">in</span> <span class="Identifier">range</span>(<span class="Constant">1</span>, n+<span class="Constant">1</span>)]
+        <span class="Statement">for</span> idx, val <span class="Statement">in</span> <span class="Identifier">enumerate</span>(results):
+            my_array[idx] = val.get()
+        <span class="Comment">####### </span>
+        pool.close()
+    <span class="Comment"># Not parallelized version:</span>
+    <span class="Statement">else</span>:
+        <span class="Statement">for</span> i <span class="Statement">in</span> <span class="Identifier">range</span>(<span class="Constant">1</span>, n+<span class="Constant">1</span>):
+            my_array[i-<span class="Constant">1</span>] = func1(i)
+
+    <span class="Statement">return</span> my_array
+
+<span class="Statement">def</span> <span class="Identifier">main</span>():
+    start = time.time()
+    my_array = func2(nbCalculs)
+    end = time.time()
+
+    <span class="Identifier">print</span>(<span class="Constant">&quot;</span><span class="Constant">Normal time: {}</span><span class="Special">\n</span><span class="Constant">&quot;</span><span>.format(end-start)</span>)
+
+    start_parallel = time.time()
+    my_array_parallelized = func2(nbCalculs, parallel=<span class="Identifier">True</span>)
+    end_parallel = time.time()
+
+    <span class="Identifier">print</span>(<span class="Constant">&quot;</span><span class="Constant">Time based on multiprocessing: {}"</span>.format(end_parallel-start_parallel))
+
+<span class="Statement">if</span> __name__ == <span class="Constant">'</span><span class="Constant">__main__</span><span class="Constant">'</span>:
+    main()
+
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

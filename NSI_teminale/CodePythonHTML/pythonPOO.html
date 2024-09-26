@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Téléchargements/toto.py.html</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim8.1_v1">
+<meta name="syntax" content="python">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,expand_tabs,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+.Constant { color: #c00000; }
+.Identifier { color: #008080; }
+.Statement { color: #af5f00; }
+-->
+</style>
+</head>
+<body>
+<pre id='vimCodeElement'>
+<span class="Statement">class</span> <span class="Identifier">Carte</span>:
+    <span class="Statement">def</span> <span class="Identifier">__init__</span>(<em>self</em>,valeur,couleur):
+        <em>self</em>.valeur=valeur
+        <em>self</em>.couleur=couleur
+
+    <span class="Statement">def</span> <span class="Identifier">jouer</span>(<em>self</em>,other):
+        <span class="Statement">if</span> <em>self</em>.valeur==other.valeur:
+            <span class="Statement">return</span> <span class="Constant">&quot;</span><span class="Constant">Egalité</span><span class="Constant">&quot;</span>
+        <span class="Statement">elif</span> <em>self</em>.valeur&gt;other.valeur:
+            <span class="Statement">return</span> <span class="Constant">&quot;</span><span class="Constant">Gagné</span><span class="Constant">&quot;</span>
+        <span class="Statement">else</span>:
+            <span class="Statement">return</span> <span class="Constant">&quot;</span><span class="Constant">Perdu</span><span class="Constant">&quot;</span>
+maCarte=Carte(<span class="Constant">8</span>,<span class="Constant">&quot;</span><span class="Constant">Coeur</span><span class="Constant">&quot;</span>)
+saCarte=Carte(<span class="Constant">6</span>,<span class="Constant">&quot;</span><span class="Constant">Trèfle</span><span class="Constant">&quot;</span>)
+jeu=maCarte.jouer(saCarte)
+<span class="Identifier">print</span>(jeu)
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

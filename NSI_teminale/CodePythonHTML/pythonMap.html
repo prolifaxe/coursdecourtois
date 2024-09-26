@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Téléchargements/toto.py.html</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim8.1_v1">
+<meta name="syntax" content="python">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,expand_tabs,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+.Comment { color: #0000c0; }
+.Constant { color: #c00000; }
+.Identifier { color: #008080; }
+.Statement { color: #af5f00; }
+-->
+</style>
+</head>
+<body>
+<pre id='vimCodeElement'>
+<span class="Comment"># En python programmation fonctionnelle</span>
+
+<span class="Statement">def</span> <span class="Identifier">longueur</span>(liste):
+    <span class="Constant">&quot;&quot;&quot;</span><span class="Constant">renvoie la taille d'une liste de chaine de caractere</span><span class="Constant">&quot;&quot;&quot;</span>
+
+    <span class="Statement">return</span> <span class="Identifier">list</span>(<span class="Identifier">map</span>(<span class="Identifier">len</span>,liste))
+
+<span class="Identifier">print</span>(longueur([<span class="Constant">&quot;</span><span class="Constant">]Angleterre</span><span class="Constant">&quot;</span>,<span class="Constant">&quot;</span><span class="Constant">France</span><span class="Constant">&quot;</span>,<span class="Constant">&quot;</span><span class="Constant">Italie</span><span class="Constant">&quot;</span>]))
+
+<span class="Comment">(* en Ocaml *)</span>
+<span class="Identifier">open</span> Printf
+<span class="Identifier">let</span> longueur maliste =
+   List.map String.length  maliste;;
+
+<span class="Identifier">let</span> a = longueur([<span class="Constant">&quot;</span><span class="Constant">Angleterre</span><span class="Constant">&quot;</span>;<span class="Constant">&quot;</span><span class="Constant">France</span><span class="Constant">&quot;</span>;<span class="Constant">&quot;</span><span class="Constant">Italie</span><span class="Constant">&quot;</span>]);;
+<span class="Identifier">let</span> () = <span class="Identifier">List</span>.iter (printf <span class="Constant">&quot;</span><span class="Constant">%d </span><span class="Constant">&quot;</span>) a;;
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
