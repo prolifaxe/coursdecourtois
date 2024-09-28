@@ -1,3 +1,4 @@
+  document.getElementById("coorQCSGBD").innerHTML = " / Correction";
 let date1 = new Date(2024, 9, 2, 16,15);
 let date = new Date();
 let message;
