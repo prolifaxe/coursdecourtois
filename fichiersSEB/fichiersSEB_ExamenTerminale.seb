@@ -1495,7 +1495,7 @@
     <key>startResource</key>
     <string />
     <key>startURL</key>
-    <string>http://jerome.courtois2.free.fr/NSI_TerminaleEvaluations.html</string>
+    <string>https://prolifaxe.github.io/coursdecourtois/NSI_TerminaleEvaluations.html</string>
     <key>startURLAppendQueryParameter</key>
     <false />
     <key>taskBarHeight</key>
@@ -1568,7 +1568,7 @@
     <key>useTemporaryDownUploadDirectory</key>
     <false />
     <key>whitelistURLFilter</key>
-    <string>^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^http:\/\/((jerome\.courtois2\.free\.fr)|(.*?\.jerome\.courtois2\.free\.fr))\//NSI_TerminaleEvaluations\.html(()|(\?.*?))$</string>
+    <string>^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((prolifaxe\.github\.io)|(.*?\.prolifaxe\.github\.io))\//coursdecourtois/NSI_TerminaleEvaluations\.html(()|(\?.*?))$</string>
     <key>zoomMode</key>
     <integer>0</integer>
     <key>clipboardPolicy</key>
