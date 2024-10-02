@@ -1,5 +1,5 @@
 
-let date1 = new Date(2024, 9, 2, 16,15); //date et heure limite
+let date1 = new Date(2024, 8, 30, 14,15); //date et heure limite
 let date = new Date();//date courante
 let message;
 if (date > date1) {
