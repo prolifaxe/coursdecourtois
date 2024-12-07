@@ -21,3 +21,16 @@ if (date > dateRecur && date < dateFinale) {
 } else {
   document.getElementById("coorRecursivite").innerHTML = "Sujet et correction";
 }
+
+//Devoir arbre 2024
+let dateArbre2024 = new Date(2024, 11, 11, 12,30); //date et heure limite
+
+message =
+  '<a href="https://www.math93.com/images/pdf/annales_bac/Bac_NSI/bac_NSI_2024/24_NSIJ1ME_1.pdf">Sujet</a>';
+message=message+ ' / <a href="https://projet.eu.org/pedago/sin/NSI/sujets/NSI-2024-metropole-1-sujet-officiel_corr.pdf">correction</a>'
+if (date > dateArbre2024 && date < dateFinale) {
+
+  document.getElementById("coorArbre2024").innerHTML = message;
+} else {
+  document.getElementById("coorArbre2024").innerHTML = "Sujet et correction";
+}
