@@ -75,7 +75,7 @@
     <key>backgroundOpenSEBConfig</key>
     <false />
     <key>blacklistURLFilter</key>
-    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$</string>
+    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$</string>
     <key>blockPopUpWindows</key>
     <false />
     <key>browserExamKey</key>
@@ -1557,6 +1557,36 @@
         <false />
         <key>expression</key>
         <string>https://capytale2.ac-paris.fr/web/my?legacy</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://capytale2.ac-paris.fr/my/</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://capytale2.ac-paris.fr/bibliotheque</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://psn.monlycee.net/</string>
         <key>action</key>
         <integer>0</integer>
       </dict>
