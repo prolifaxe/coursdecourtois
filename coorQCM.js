@@ -36,7 +36,7 @@ if (date > dateArbre2024 && date < dateFinale) {
 }
 
 //Devoir réseau  2024/25
-let dateReseau2024 = new Date(2025, ,0 ,6, 13,30); //date et heure limite
+let dateReseau2024 = new Date(2025, ,0 ,6, 14,00); //date et heure limite
 
 
 message=' / <a href="https://genumsi.inria.fr/qcm-corrige.php?cle=MTgxNTszNjM7MTM0OTs0NTE7MzA7MzkzOzQ0MjsxODI5OzE4MTI7MTUzNDsxMzQxOzE4MjM7MTgxNDsxODA5OzE1ODE7NDg1OzUwNDsyMzA7MTgyMTsxODEwOzE4MTE7MTgyNTs0NTA7MzY0OzE4MjY7NDQ5OzEzNDc7MTgyNDsxODIyOzQ0OA==">correction</a>'
