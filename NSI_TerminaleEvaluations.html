@@ -151,7 +151,69 @@ interfaces</strong>.</em></p>
 <p><a download="fichiersSEB\ExamenSurOffice365.seb" href="fichiersSEB\ExamenSurOffice365.seb">Evaluation sur Office365 Télécharger puis lancer le fichier .seb pour passer l'évaluation</a></p>
 <p><a download="fichiersSEB\fichiersSEB_ExamenTerminale.seb" href="fichiersSEB\fichiersSEB_ExamenTerminale.seb">Evaluation sur Capytale Télécharger puis lancer le fichier .seb pour passer l'évaluation</a></p>
 <p><a href="https://safeexambrowser.org/download_en.html">Installation de SEB </a></p>
+<p>
+        Pour vous connecter sur GenumSi, faire la concaténation
+        Jour+Mois+Prenom[0], dans l'ordre, c'est à dire :
+      </p>
 
+      <ul>
+        <li>Du jour de votre date de naissance;</li>
+        <li>Du Mois de votre date de naissance en deux chiffres;</li>
+        <li>
+          De la<strong> première lettre </strong>de votre prénom transformée en
+          deux chiffres (sachant que a vaut 01, b vaut 02, etc ...);
+        </li>
+      </ul>
+      <p>
+        Exemple: François né le 05/02/2004  utilisera
+        l'identifiant 50206. La concaténation jour+mois ne suffit pas à cause
+        du
+        <a
+          target="_blanck"
+          href="https://fr.wikipedia.org/wiki/Paradoxe_des_anniversaires"
+          >Paradoxe des Anniversaires </a
+        >.
+      </p>
+
+      <p id="montexte">Mettez votre prénom en minuscule sans accent:</p>
+      Votre prénom est <span id="prenom"></span>
+      <script>
+        document.getElementById("prenom").innerHTML =
+          '<input type="text" name="Valeur_Reponse" id="Id_Reponse" />';
+      </script>
+
+      <!--et le codage de votre prénom est <span id="ICI">?????</span>-->
+      <p>
+        Jour de naissance:
+        <span id="id_jours"></span>
+        Mois de naissance:
+        <span id="id_mois"></span>
+        <br>
+        Classe:
+        <span id="classes"></span>
+        <script>
+          var mesClasses;
+          mesClasses =
+            '<select id="choixclasse" name="classe" ><option value=""> Choisir une classe </option><option value="101"> 101 </option>';
+
+          mesClasses =
+            mesClasses +
+            '<option value="102"> 102 </option><option value="103"> 103 </option><option value="104"> 104 </option><option value="105"> 105 </option>';
+          mesClasses =
+            mesClasses +
+            '<option value="106"> 106 </option><option value="107"> 107 </option>';
+          mesClasses =
+            mesClasses +
+            '<option value="T"> Terminale </option>';
+          mesClasses =
+            mesClasses +
+            '<input type="button" value="Valider" onclick="selection();" /> ';
+
+          document.getElementById("classes").innerHTML = mesClasses;
+        </script>
+      </p>
+      <p>Votre identifiant GenumSI est <span id="identifiant">????</span></p>
+      <script src="script.js"></script>
 <h2>DEVOIRS 2024-2025</h2><br>
 <div itemprop="articleBody">
 <li><strong>Notion de base sur le réseau</strong><br>
