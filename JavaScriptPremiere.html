@@ -343,7 +343,10 @@ En cas d'erreurs sur le Javascipt on peut regarder s'il y a un message d'erreurs
 
 <h3><strong>Exercice 0 : Le débuggage</strong></h3>
 <p>Le JavaScript n'est pas aussi souple que le python pour le débugage. Nous allons apprendre une méthode de base pour débugguer. </p>
-<p>Recopiez le code suivant, truffé d'erreurs, sur une page html nommée <strong>Debug.html</strong> sur NotePad++ et ouvrez-le avec votre navigateur. Corrigez les erreurs.</p>
+<p>Recopiez le code suivant, truffé d'erreurs, sur une page html nommée <strong>Debug.html</strong> sur NotePad++ et ouvrez-le avec votre navigateur. Corrigez les erreurs en utilisant la console <strong>Ctrl+shift+I</strong>.</p>
+En donnant les mots "Charles" puis "Baudelaire", le résultat doit donner <br>
+
+<img src="NSI_premiere\javascript\ResultatDebug.JPG" width=30% height=30% >
 <!-- HTML generated using hilite.me -->
 <div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
 <pre style="margin: 0; line-height: 125%;"><span style="color: #557799;">&lt;!DOCTYPE html&gt;</span>
@@ -368,8 +371,17 @@ En cas d'erreurs sur le Javascipt on peut regarder s'il y a un message d'erreurs
 
 <span style="color: #007700;">&lt;script&gt;</span>
 
-        <span style="color: #007020;">document</span>.write(<span style="background-color: #fff0f0;">'&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p>');
-    <span style="color: #007700;">&lt;script&gt;</span>
+        <span style="color: #007020;">document</span>.write(<span style="background-color: #fff0f0;">'&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<span >&lt;br&gt;</span>\
+sed do eiusmod tempor incididunt ut labore et dolore magna<span >&lt;br&gt;</span>\
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation<span >&lt;br&gt;</span>\
+ullamco laboris nisi ut aliquip ex ea commodo consequat.<span >&lt;br&gt;</span>\
+Duis aute irure dolor in reprehenderit in voluptate velit<span >&lt;br&gt;</span>\
+esse cillum dolore eu fugiat nulla pariatur. Excepteur sint<span >&lt;br&gt;</span>\
+occaecat cupidatatnon proident, sunt in culpa qui officia<span >&lt;br&gt;</span>\
+deserunt mollit anim id est laborum.&lt;/p>');
+
+<span style="color: #007700;">&lt;script&gt;</span>
+
 <span style="color: #007700;">&lt;/body&gt;</span>
 <span style="color: #007700;">&lt;/html&gt;</span>
 </pre>
