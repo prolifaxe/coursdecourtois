@@ -209,7 +209,7 @@
     <key>enableZoomText</key>
     <true />
     <key>examKeySalt</key>
-    <data>Fq2f2Nd8sV0TVbWPDdEiPQOJyAchI64ba1cCk2hTi7g=</data>
+    <data>4K3vUzvC+fU2DH4ZR7l/LO+WD1crA8dUxJ2ZoLUR48Y=</data>
     <key>examSessionClearCookiesOnEnd</key>
     <true />
     <key>examSessionClearCookiesOnStart</key>
@@ -308,6 +308,72 @@
     <false />
     <key>prohibitedProcesses</key>
     <array>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>currentUser</key>
+        <true />
+        <key>strongKill</key>
+        <false />
+        <key>os</key>
+        <integer>1</integer>
+        <key>executable</key>
+        <string>vlc.exe</string>
+        <key>originalName</key>
+        <string>vlc.exe</string>
+        <key>description</key>
+        <string />
+        <key>identifier</key>
+        <string />
+        <key>windowHandlingProcess</key>
+        <string />
+        <key>user</key>
+        <string />
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>currentUser</key>
+        <true />
+        <key>strongKill</key>
+        <false />
+        <key>os</key>
+        <integer>1</integer>
+        <key>executable</key>
+        <string>Microsoft.Media.Player.exe</string>
+        <key>originalName</key>
+        <string>Microsoft.Media.Player.exe</string>
+        <key>description</key>
+        <string />
+        <key>identifier</key>
+        <string />
+        <key>windowHandlingProcess</key>
+        <string />
+        <key>user</key>
+        <string />
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>currentUser</key>
+        <true />
+        <key>strongKill</key>
+        <false />
+        <key>os</key>
+        <integer>1</integer>
+        <key>executable</key>
+        <string>spotify.exe</string>
+        <key>originalName</key>
+        <string>spotify.exe</string>
+        <key>description</key>
+        <string />
+        <key>identifier</key>
+        <string />
+        <key>windowHandlingProcess</key>
+        <string />
+        <key>user</key>
+        <string />
+      </dict>
       <dict>
         <key>active</key>
         <true />
@@ -1450,16 +1516,6 @@
         <key>regex</key>
         <false />
         <key>expression</key>
-        <string>https://genumsi.inria.fr/</string>
-        <key>action</key>
-        <integer>1</integer>
-      </dict>
-      <dict>
-        <key>active</key>
-        <true />
-        <key>regex</key>
-        <false />
-        <key>expression</key>
         <string>https://www.office.com/*</string>
         <key>action</key>
         <integer>1</integer>
@@ -1494,6 +1550,26 @@
         <key>action</key>
         <integer>1</integer>
       </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://login.microsoftonline.com/common/*</string>
+        <key>action</key>
+        <integer>1</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://m365.cloud.microsoft/*</string>
+        <key>action</key>
+        <integer>1</integer>
+      </dict>
     </array>
     <key>urlFilterTrustedContent</key>
     <true />
@@ -1502,10 +1578,26 @@
     <key>useTemporaryDownUploadDirectory</key>
     <false />
     <key>whitelistURLFilter</key>
-    <string>^https:\/\/((((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr)))|(((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/.*?))(()|(\?.*?))$;^https:\/\/((www\.office\.com)|(.*?\.www\.office\.com))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((login\.microsoftonline\.com)|(.*?\.login\.microsoftonline\.com))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((lyceesiledefrance-my\.sharepoint\.com)|(.*?\.lyceesiledefrance-my\.sharepoint\.com))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((www\.microsoft365\.com)|(.*?\.www\.microsoft365\.com))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((((www\.office\.com)|(.*?\.www\.office\.com)))|(((www\.office\.com)|(.*?\.www\.office\.com))\/.*?))(()|(\?.*?))$</string>
+    <string>^https:\/\/((www\.office\.com)|(.*?\.www\.office\.com))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((login\.microsoftonline\.com)|(.*?\.login\.microsoftonline\.com))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((lyceesiledefrance-my\.sharepoint\.com)|(.*?\.lyceesiledefrance-my\.sharepoint\.com))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((www\.microsoft365\.com)|(.*?\.www\.microsoft365\.com))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((login\.microsoftonline\.com)|(.*?\.login\.microsoftonline\.com))\/((/common/.*?)|(/common/.*?))(()|(\?.*?))$;^https:\/\/((m365\.cloud\.microsoft)|(.*?\.m365\.cloud\.microsoft))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((((www\.office\.com)|(.*?\.www\.office\.com)))|(((www\.office\.com)|(.*?\.www\.office\.com))\/.*?))(()|(\?.*?))$</string>
     <key>zoomMode</key>
     <integer>0</integer>
     <key>clipboardPolicy</key>
     <integer>2</integer>
+    <key>batteryChargeThresholdCritical</key>
+    <real>0.1</real>
+    <key>batteryChargeThresholdLow</key>
+    <real>0.2</real>
+    <key>allowDownloads</key>
+    <true />
+    <key>allowUploads</key>
+    <true />
+    <key>disableSessionChangeLockScreen</key>
+    <false />
+    <key>enableCursorVerification</key>
+    <true />
+    <key>displayAlwaysOn</key>
+    <true />
+    <key>systemAlwaysOn</key>
+    <true />
   </dict>
 </plist>
