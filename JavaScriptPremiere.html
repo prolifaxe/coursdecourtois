@@ -577,27 +577,6 @@ alert(number); <span style="color: #888888;">// Affiche : « 1 »</span>
 <p>&nbsp;</p>
 <ul>
 <li>
-<p>La boucle <code data-claire-semantic="text">while</code> permet de répéter une liste d'instructions tant que la condition est vérifiée.</p>
-</li>
-</ul>
-<!-- HTML generated using hilite.me -->
-<div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
-<pre style="margin: 0; line-height: 125%;"><span style="color: #007700;">&lt;script&gt;</span>
-<span style="color: #008800; font-weight: bold;">var</span> N <span style="color: #333333;">=</span> <span style="color: #0000dd; font-weight: bold;">0</span>,somme<span style="color: #333333;">=</span><span style="color: #0000dd; font-weight: bold;">0</span>;
-
-<span style="color: #008800; font-weight: bold;">while</span> (N <span style="color: #333333;">&lt;</span> <span style="color: #0000dd; font-weight: bold;">5</span>) <br />{
-    N<span style="color: #333333;">=N+1</span>; // ou N++
-    somme<span style="color: #333333;">=</span>somme<span style="color: #333333;">+</span>N;
-}
-
-alert(<span style="background-color: #fff0f0;">'somme= '</span> <span style="color: #333333;">+</span> somme <span style="color: #333333;">+</span> <span style="background-color: #fff0f0;">' et N='</span> <span style="color: #333333;">+</span> N ); <span style="color: #888888;">// </span><span style="color: #888888;">Affiche « somme = 15 et N = 5 »</span>
-<span style="color: #007700;">&lt;/script&gt;</span>
-</pre>
-</div>
-<p>Un test avec ce script : <a href="NSI_premiere\javascript\Javascript-boucles-exemple1.html">exemple 1</a></p>
-<p>&nbsp;</p>
-<ul>
-<li>
 <p>La boucle <code data-claire-semantic="text">for</code> est une boucle utilisée pour répéter une liste d'instructions un certain nombre de fois.</p>
 </li>
 </ul>
@@ -619,7 +598,37 @@ alert(<span style="background-color: #fff0f0;">'somme= '</span> <span style="col
 <p>&nbsp;</p>
 <blockquote>
 <p><strong>Exercice 4</strong> sur <a target="_blank" href="https://notebook.basthon.fr/?kernel=javascript&from=https://prolifaxe.github.io/coursdecourtois/NSI_premiere/javascript/Entrainementjavascript.ipynb">basthon pour javaScript</a></p>
-<p>Ecrire un script Javascript qui tente de faire deviner un entier de votre choix et affiche, plus petit, ou plus grand jusqu'à la victoire.<br />Commencer par fixer votre nombre à deviner puis essayer de le générer aléatoirement dans un deuxième temps.<br />Vous nommerez votre fichier : "<strong>Exercice4.html</strong>" et devez faire figure le lien vers ce fichier sur votre page web : exercices JavaScript.</p>
+<p>Ecrire  un script Javascript qui fait la somme des nombres inférieurs à 100 qui sont  des multiples de 7.<br />Commencer par fixer votre nombre à deviner puis essayer de le générer aléatoirement dans un deuxième temps.<br />
+
+	votre fichier : "<strong>Exercice4.html</strong>" et devez faire figure le lien vers ce fichier sur votre page web : exercices JavaScript.</p>
+</blockquote>
+<ul>
+<li>
+<p>La boucle <code data-claire-semantic="text">while</code> permet de répéter une liste d'instructions tant que la condition est vérifiée.</p>
+</li>
+</ul>
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #007700;">&lt;script&gt;</span>
+<span style="color: #008800; font-weight: bold;">var</span> N <span style="color: #333333;">=</span> <span style="color: #0000dd; font-weight: bold;">0</span>,somme<span style="color: #333333;">=</span><span style="color: #0000dd; font-weight: bold;">0</span>;
+
+<span style="color: #008800; font-weight: bold;">while</span> (N <span style="color: #333333;">&lt;</span> <span style="color: #0000dd; font-weight: bold;">5</span>) <br />{
+    N<span style="color: #333333;">=N+1</span>; // ou N++
+    somme<span style="color: #333333;">=</span>somme<span style="color: #333333;">+</span>N;
+}
+
+alert(<span style="background-color: #fff0f0;">'somme= '</span> <span style="color: #333333;">+</span> somme <span style="color: #333333;">+</span> <span style="background-color: #fff0f0;">' et N='</span> <span style="color: #333333;">+</span> N ); <span style="color: #888888;">// </span><span style="color: #888888;">Affiche « somme = 15 et N = 5 »</span>
+<span style="color: #007700;">&lt;/script&gt;</span>
+</pre>
+</div>
+<p>Un test avec ce script : <a href="NSI_premiere\javascript\Javascript-boucles-exemple1.html">exemple 1</a></p>
+<p>&nbsp;</p>
+
+<blockquote>
+<p><strong>Exercice 5</strong> sur <a target="_blank" href="https://notebook.basthon.fr/?kernel=javascript&from=https://prolifaxe.github.io/coursdecourtois/NSI_premiere/javascript/Entrainementjavascript.ipynb">basthon pour javaScript</a></p>
+<p>Ecrire un script Javascript qui tente de faire deviner un entier de votre choix et affiche, plus petit, ou plus grand jusqu'à la victoire.<br />Commencer par fixer votre nombre à deviner puis essayer de le générer aléatoirement dans un deuxième temps.<br />
+
+	votre fichier : "<strong>Exercice5.html</strong>" et devez faire figure le lien vers ce fichier sur votre page web : exercices JavaScript.</p>
 </blockquote>
 <p>Exemple attendu en vidéo :</p>
 <p>
@@ -683,9 +692,10 @@ alert(DireBonjour(nom)); <span style="color: #888888;">// Ici on affiche la vale
 </ul>
 <p>&nbsp;</p>
 <blockquote>
-<p><strong>Exercice 5</strong> sur <a target="_blank" href="https://notebook.basthon.fr/?kernel=javascript&from=https://prolifaxe.github.io/coursdecourtois/NSI_premiere/javascript/Entrainementjavascript.ipynb">basthon pour javaScript</a></p>
-<p>Ecrire une fonction Javascript qui teste la présence de la lettre "e" minuscule dans une chaîne de caractères passée en paramètre. Cette fonction doit renvoyer vrai ou faux. Utilisez votre fonction après avoir demandé une chaîne de caractères via la fonction <code data-claire-semantic="text">prompt()</code>. <br />Vous nommerez votre fichier : "<strong>Exercice5.html</strong>" et devez faire figure le lien vers ce fichier sur votre page web : </p>
-<br />Aide : La fonction <code data-claire-semantic="text">.length </code> renvoie la longueur d'une chaine C et la fonction <code data-claire-semantic="text">.charAt(position) </code>le caractère à la position précisée dans la chaîne C. <br />Voici un exemple d'utilisation :<a href="/images/pdf/NSI/premiere/html-premiere/Javascript-Fonctions-Exemple2.html"> lien exemple 2</a>.</blockquote>
+<p><strong>Exercice 6</strong> sur <a target="_blank" href="https://notebook.basthon.fr/?kernel=javascript&from=https://prolifaxe.github.io/coursdecourtois/NSI_premiere/javascript/Entrainementjavascript.ipynb">basthon pour javaScript</a></p>
+<p>Ecrire une fonction Javascript qui teste la présence de la lettre "e" minuscule dans une chaîne de caractères passée en paramètre. Cette fonction doit renvoyer vrai ou faux. Utilisez votre fonction après avoir demandé une chaîne de caractères via la fonction <code data-claire-semantic="text">prompt()</code>. <br />Vous nommerez votre fichier : "<strong>Exercice6.html</strong>" et devez faire figure le lien vers ce fichier sur votre page web : </p>
+<br />Aide : La fonction <code data-claire-semantic="text">.length </code> renvoie la longueur d'une chaine C et la fonction <code data-claire-semantic="text">.charAt(position) </code>
+le caractère à la position précisée dans la chaîne C. <br />Voici un exemple d'utilisation :<a href="/images/pdf/NSI/premiere/html-premiere/Javascript-Fonctions-Exemple2.html"> lien exemple 2</a>.</blockquote>
 <p>&nbsp;</p>
 <!-- HTML generated using hilite.me -->
 <div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
@@ -1063,7 +1073,7 @@ Choisir un mot:
 <p><strong>Exercice 9.1 : Un exemple d'évènement chez un  collégue. <br /></strong></p>
 
 <ul>
-<li><p><a target="_blank"  href="https://capytale2.ac-paris.fr/web/c/c3c1-5817488"> Événements en JavaScript: Exercice 7.1</a> /  <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/e8a3-5817467">Correction JavaScript</a></p></li>
+<li><p><a target="_blank"  href="https://capytale2.ac-paris.fr/web/c/c3c1-5817488"> Événements en JavaScript: Exercice 9.1</a> /  <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/e8a3-5817467">Correction JavaScript</a></p></li>
 
 </blockquote>
 <blockquote>
@@ -1071,11 +1081,11 @@ Choisir un mot:
 
 	<ul>
 
-		<li><p><a target="_blank"  href="http://portail.lyc-la-martiniere-diderot.ac-lyon.fr/srv1/html/cours_js_nsi/evenements/actions.html"> Événements en JavaScript: Exercice 7.2</a></p></li></ul>
+		<li><p><a target="_blank"  href="http://portail.lyc-la-martiniere-diderot.ac-lyon.fr/srv1/html/cours_js_nsi/evenements/actions.html"> Événements en JavaScript: Exercice 9.2</a></p></li></ul>
 	</blockquote>
 	<blockquote>
 
-<p><strong>Exercice 9 à rajouter au projet HTML <br /></strong></p>
+<p><strong>Exercice 10 à rajouter au projet HTML <br /></strong></p>
 <p>Concevoir une page avec un Quiz avec au moins 3 questions qui portent sur votre Site Web :
 <ul>
  <li> 1 questions Vrai/Faux ou QCm avec boutons radios ;</li>
