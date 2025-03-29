@@ -75,7 +75,7 @@
     <key>backgroundOpenSEBConfig</key>
     <false />
     <key>blacklistURLFilter</key>
-    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$</string>
+    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mediacentre(()|(\?.*?))$</string>
     <key>blockPopUpWindows</key>
     <false />
     <key>browserExamKey</key>
@@ -209,7 +209,7 @@
     <key>enableZoomText</key>
     <true />
     <key>examKeySalt</key>
-    <data>nK8EHMdm0HxLRdvVWm6PTIMjVatvnGJM2XsqN2RxW6Y=</data>
+    <data>NC/fz4qvd2iLoB16gUMc6+e45tg5Eg4zntfYMwdF1CU=</data>
     <key>examSessionClearCookiesOnEnd</key>
     <true />
     <key>examSessionClearCookiesOnStart</key>
@@ -1495,7 +1495,7 @@
     <key>startResource</key>
     <string />
     <key>startURL</key>
-    <string>https://petalite-glitter-abrosaurus.glitch.me</string>
+    <string>https://petalite-glitter-abrosaurus.glitch.me/index3.php</string>
     <key>startURLAppendQueryParameter</key>
     <false />
     <key>taskBarHeight</key>
@@ -1516,7 +1516,7 @@
         <key>regex</key>
         <false />
         <key>expression</key>
-        <string>https://ent.iledefrance.fr/*</string>
+        <string>https://ent.iledefrance.fr/</string>
         <key>action</key>
         <integer>1</integer>
       </dict>
@@ -1630,6 +1630,16 @@
         <key>action</key>
         <integer>0</integer>
       </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://ent.iledefrance.fr/mediacentre</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
     </array>
     <key>urlFilterTrustedContent</key>
     <true />
@@ -1638,7 +1648,7 @@
     <key>useTemporaryDownUploadDirectory</key>
     <true />
     <key>whitelistURLFilter</key>
-    <string>^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me)))|(((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me))\/.*?))(()|(\?.*?))$</string>
+    <string>^https:\/\/((((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr)))|(((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me))\//index3\.php(()|(\?.*?))$</string>
     <key>zoomMode</key>
     <integer>0</integer>
     <key>clipboardPolicy</key>
