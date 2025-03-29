@@ -209,7 +209,7 @@
     <key>enableZoomText</key>
     <true />
     <key>examKeySalt</key>
-    <data>27R3C7B8MKKUI0AgNZXZLmkoaAmQkCK5F4yz4kQfmkU=</data>
+    <data>Dg/5oCLhz+J9fv3wO/5eyysS0vATq8KpYcshJeI616A=</data>
     <key>examSessionClearCookiesOnEnd</key>
     <true />
     <key>examSessionClearCookiesOnStart</key>
@@ -227,7 +227,7 @@
     <key>forceAppFolderInstall</key>
     <true />
     <key>hashedAdminPassword</key>
-    <string />
+    <string>B55C1BB5080F8D67B7D0319A5FD7CF28F447453A0231B3536F0687BA306B925C</string>
     <key>hashedQuitPassword</key>
     <string />
     <key>hideBrowserWindowToolbar</key>
@@ -1495,7 +1495,7 @@
     <key>startResource</key>
     <string />
     <key>startURL</key>
-    <string>https://whip-mud-grade.glitch.me/</string>
+    <string>https://petalite-glitter-abrosaurus.glitch.me</string>
     <key>startURLAppendQueryParameter</key>
     <false />
     <key>taskBarHeight</key>
@@ -1658,7 +1658,7 @@
     <key>useTemporaryDownUploadDirectory</key>
     <true />
     <key>whitelistURLFilter</key>
-    <string>^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((prolifaxe\.github\.io)|(.*?\.prolifaxe\.github\.io))\//coursdecourtois/JavaScriptPremiere\.html(()|(\?.*?))$;^https:\/\/((devdocs\.io)|(.*?\.devdocs\.io))\/((/javascript/.*?)|(/javascript/.*?))(()|(\?.*?))$;^https:\/\/((devdocs\.io)|(.*?\.devdocs\.io))\/((/css/.*?)|(/css/.*?))(()|(\?.*?))$;^https:\/\/((notebook\.basthon\.fr)|(.*?\.notebook\.basthon\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((prolifaxe\.github\.io)|(.*?\.prolifaxe\.github\.io))\//coursdecourtois/HTMLCSSPremiere\.html(()|(\?.*?))$;^https:\/\/((prolifaxe\.github\.io)|(.*?\.prolifaxe\.github\.io))\/((/coursdecourtois/NSI_premiere/javascript/Devoirs/.*?)|(/coursdecourtois/NSI_premiere/javascript/Devoirs/.*?))(()|(\?.*?))$;^https:\/\/((((whip-mud-grade\.glitch\.me)|(.*?\.whip-mud-grade\.glitch\.me)))|(((whip-mud-grade\.glitch\.me)|(.*?\.whip-mud-grade\.glitch\.me))\/.*?))(()|(\?.*?))$</string>
+    <string>^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((prolifaxe\.github\.io)|(.*?\.prolifaxe\.github\.io))\//coursdecourtois/JavaScriptPremiere\.html(()|(\?.*?))$;^https:\/\/((devdocs\.io)|(.*?\.devdocs\.io))\/((/javascript/.*?)|(/javascript/.*?))(()|(\?.*?))$;^https:\/\/((devdocs\.io)|(.*?\.devdocs\.io))\/((/css/.*?)|(/css/.*?))(()|(\?.*?))$;^https:\/\/((notebook\.basthon\.fr)|(.*?\.notebook\.basthon\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((prolifaxe\.github\.io)|(.*?\.prolifaxe\.github\.io))\//coursdecourtois/HTMLCSSPremiere\.html(()|(\?.*?))$;^https:\/\/((prolifaxe\.github\.io)|(.*?\.prolifaxe\.github\.io))\/((/coursdecourtois/NSI_premiere/javascript/Devoirs/.*?)|(/coursdecourtois/NSI_premiere/javascript/Devoirs/.*?))(()|(\?.*?))$;^https:\/\/((((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me)))|(((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me))\/.*?))(()|(\?.*?))$</string>
     <key>zoomMode</key>
     <integer>0</integer>
     <key>clipboardPolicy</key>
