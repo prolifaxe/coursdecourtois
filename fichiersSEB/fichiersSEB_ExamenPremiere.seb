@@ -1495,7 +1495,7 @@
     <key>startResource</key>
     <string />
     <key>startURL</key>
-    <string>https://petalite-glitter-abrosaurus.glitch.me/index3.php</string>
+    <string>https://petalite-glitter-abrosaurus.glitch.me</string>
     <key>startURLAppendQueryParameter</key>
     <false />
     <key>taskBarHeight</key>
@@ -1648,7 +1648,7 @@
     <key>useTemporaryDownUploadDirectory</key>
     <true />
     <key>whitelistURLFilter</key>
-    <string>^https:\/\/((((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr)))|(((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me))\//index3\.php(()|(\?.*?))$</string>
+    <string>^https:\/\/((((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr)))|(((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me)))|(((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me))\/.*?))(()|(\?.*?))$</string>
     <key>zoomMode</key>
     <integer>0</integer>
     <key>clipboardPolicy</key>
