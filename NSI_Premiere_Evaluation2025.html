@@ -1,0 +1,1074 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta charset="utf-8" />
+    <!-- base href="https://www.math93.com/lycee/nsi-1ere/nsi-1ere.html" -->
+
+    <title>Evaluation Première</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+        <link rel="icon" href="https://cdn.glitch.global/97872096-b7d8-4ed8-8784-9e3afaaeb597/mirror.png?v=1739444980177" type="image/x-icon">
+
+    <link rel="stylesheet" href="styleEval.css" />
+  </head>
+  <body>
+    <br />
+    <div style="text-align: center; font-family: Comic Sans MS">
+      <h1>NSI premiére, Les évaluations :</h1>
+      <h2>QCM sur GENUMSI et Epreuve pratique sur Capytale;</h2>
+
+      <p>
+        <a
+          href="https://cdn.glitch.global/96350c47-5e9d-4c1e-bb43-657b7ac11a65/fichiersSEB_ExamenPremiere.seb?v=1743622257758"
+          >Télécharger puis lancer le fichier .seb pour passer une évaluation
+          sur Capytale et/ou un QCM GenumSi</a
+        >
+      </p>
+
+      <p>
+        <a href="https://safeexambrowser.org/download_en.html"
+          >Installation de SEB
+        </a>
+      </p>
+
+      <p>
+        Pour vous connecter sur GenumSi, faire la concaténation
+        Jour+Mois+Classe+Prenom[0], dans l'ordre, c'est à dire :
+      </p>
+
+    <div>
+      <ul>
+        <li>Du jour de votre date de naissance;</li>
+        <li>Du Mois de votre date de naissance en deux chiffres;</li>
+        <li>Du numero de votre classe;</li>
+        <li>
+          De la<strong> première lettre </strong>de votre prénom transformée en
+          deux chiffres (sachant que a vaut 01, b vaut 02, etc ...);
+        </li>
+      </ul>
+    </div>
+
+      <p>
+        Exemple: François né le 05/02/2004 de la classe 111 utilisera
+        l'identifiant 50211106. La concaténation jour+mois ne suffit pas à cause
+        du
+        <a
+          target="_blanck"
+          href="https://fr.wikipedia.org/wiki/Paradoxe_des_anniversaires"
+          ><font color="red">Paradoxe des Anniversaires</font> </a
+        >.
+      </p>
+
+      <p id="montexte">Mettez votre prénom en minuscule sans accent:</p>
+      Votre prénom est <span id="prenom"></span>
+      <script>
+        document.getElementById("prenom").innerHTML =
+          '<input type="text" name="Valeur_Reponse" id="Id_Reponse" />';
+      </script>
+
+      <!--et le codage de votre prénom est <span id="ICI">?????</span>-->
+      <p>
+        Jour de naissance:
+        <span id="id_jours"></span>
+        Mois de naissance:
+        <span id="id_mois"></span>
+        Classe:
+        <span id="classes"></span>
+        <script>
+          var mesClasses;
+          mesClasses =
+            '<select id="choixclasse" name="classe" ><option value=""> Choisir une classe </option><option value="101"> 101 </option>';
+
+          mesClasses =
+            mesClasses +
+            '<option value="102"> 102 </option><option value="103"> 103 </option><option value="104"> 104 </option><option value="105"> 105 </option>';
+          mesClasses =
+            mesClasses +
+            '<option value="106"> 106 </option><option value="107"> 107 </option>';
+          mesClasses =
+            mesClasses +
+            '<option value="T"> Terminale </option>';
+          mesClasses =
+            mesClasses +
+            '<input type="button" value="Valider" onclick="selection();" /> ';
+
+          document.getElementById("classes").innerHTML = mesClasses;
+        </script>
+      </p>
+      <p>Votre identifiant GenumSI est <span id="identifiant">????</span></p>
+      <script src="script.js"></script>
+    </div>
+
+     <p>
+
+    Vous pouvez retrouver vos devoirs sur <a target="_blanck" href="https://capytale2.ac-paris.fr">Capytale</a> en allant dans <a target="_blanck" href="https://capytale2.ac-paris.fr">les activités de Capytale</a>.
+       </p>
+
+
+
+
+
+
+    <ol reversed="true">
+
+      <li>
+        Epreuve Pratique HTML ,CSS, JavaScript
+        <ul>
+          <li>
+            Sujet Groupe A:
+            <ul>
+
+              <li>
+                Exercice 1 :
+                  <span id="JavascriptPurA">JavaScript pur sujet A</span>
+
+
+              </li>
+              <li>
+                Exercice 2 (bonus) :
+                <span id="JavascriptEvenementA">JavaScript et Evènement sujet A</span>
+                <ul>
+                  Voir l'image :
+                  <li>
+                    <span id="evenmntIngredient">Image</span>
+
+                  </li>
+                </ul>
+              </li>
+
+              <a
+                target="_blank"
+                href="https://capytale2.ac-paris.fr/web/c/36e9-2790420"
+                >Corrigé sujet A</a
+              >.
+            </ul>
+          </li>
+          <br />
+          <li>
+            Sujet Groupe B:
+            <ul>
+
+              <li>
+                Exercice 1 :
+                <span id="JavascriptPurB">JavaScript pur sujet B</span>
+
+              </li>
+              <li>
+                Exercice 2 (bonus) :
+                <span id="JavascriptEvenementB">JavaScript et Evènement sujet B</span>
+
+                <ul>
+                  Voir l'image :
+                  <li>
+                    <span id="evenmntMusique"></span>
+
+                  </li>
+                </ul>
+              </li>
+
+              <a
+                target="_blank"
+                href="https://capytale2.ac-paris.fr/web/c/fc3f-2893383"
+                >Corrigé sujet B </a
+              >.
+            </ul>
+          </li>
+          <li>
+            Sujet Rattrapage:
+            <ul>
+
+              <li>
+                Exercice 1 :
+                <span id="JavascriptPurRattrapage">JavaScript pur </span>
+
+                </a>
+              </li>
+              <li>
+                Exercice 2 (bonus):
+                <span id="JavascriptEvenementRattrapage">JavaScript et Evènement</span>
+
+                <ul>
+                  Voir l'image :
+                  <li>
+                    <span id="choisirVoyelle"></span>
+
+                  </li>
+                </ul>
+              </li>
+
+              <a
+                target="_blank"
+                href="https://capytale2.ac-paris.fr/web/c/d85d-2905823"
+                >Corrigé Rattrapage</a
+              >.
+            </ul>
+          </li>
+          <p>
+            Vous avez le droit à une fiche manuscrite recto-verso et vous pouvez
+            consulter:
+          </p>
+          <ul>
+            <li>
+              HTML et CSS, le cours de base :
+              <a
+                target="_blank"
+                href="https://prolifaxe.github.io/coursdecourtois/HTMLCSSPremiere.html"
+                >HTML et CSS</a
+              >
+            </li>
+            <li>
+              JavaScript le cours :
+              <a
+                target="_blank"
+                href="https://prolifaxe.github.io/coursdecourtois/JavaScriptPremiere.html"
+                >http://jerome.courtois2.free.fr/JavaScriptPremiere.html</a
+              >
+            </li>
+            <li>
+              JavaScript la documentation :
+              <a target="_blank" href="https://devdocs.io/javascript/"
+                >https://devdocs.io/javascript/</a
+              >
+            </li>
+            <li>
+              CSS la documentation :
+              <a target="_blank" href="https://devdocs.io/css/"
+                >https://devdocs.io/css/</a
+              >
+            </li>
+            <li>
+              Pour débuguer JavaScript :
+              <a
+                target="_blank"
+                href="https://notebook.basthon.fr/?kernel=javascript"
+                >https://notebook.basthon.fr/?kernel=javascript</a
+                >. Utiliser la fonction <span style="color:#FF0000">console.log()</span> pour afficher quelque chose. Attention on ne peut pas y mettre de HTML.
+            </li>
+          </ul>
+        </ul>
+      </li>
+
+
+
+      <br>
+
+
+
+
+
+
+
+
+
+
+                <li>
+        Logique Booléenne et circuit logique.
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/b9ff-5234991"
+              >Sujet A 101-104</a
+            >
+                 / <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/7248-5306347"
+              >Correction</a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/0dce-5237234"
+              >Sujet B 101-104</a
+            >
+                              / <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/c485-5306509"
+              >Correction</a>
+          </li>
+                    <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/60e6-5237293"
+              >Sujet A 103</a
+            >
+            / <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/cb1e-5307387"
+              >Correction</a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/53be-5237317"
+              >Sujet B 103</a
+            >
+                        / <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/7f72-5307530"
+              >Correction</a>
+          </li>
+
+
+        </ul>
+      </li>
+
+
+            <li>
+        Representation des données (entiers,relatifs, flottants, chaînes de
+        caractéres)
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=4e44db5d0a7f993263c97a797d45d376"
+              >QCM GENUMSI sujet A 103</a
+            >
+            <span id="coorRepresentationA1"></span>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=3e37d6aa89017847b3f26a1c3a008962"
+              >QCM GENUMSI sujet B 103</a
+            >
+             <span id="coorRepresentationA2"></span>
+          </li>
+                    <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=4e44db5d0a7f993263c97a797d45d376"
+              >QCM GENUMSI sujet A 101-104</a
+            >
+            <span id="coorRepresentationB1"></span>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=3e37d6aa89017847b3f26a1c3a008962"
+              >QCM GENUMSI sujet B 101-104</a
+            >
+            <span id="coorRepresentationB2"></span>
+          </li>
+
+
+        </ul>
+      </li>
+            <li>
+        Les dictionnaires
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=4b1ce145794b6fcd4c1cbae707fd4cdd"
+              >QCM GENUMSI sujet A</a>  / <span id="coorDico1"></span>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=d111f500e678c23b2b53352ac8d0ab87"
+              >QCM GENUMSI sujet B</a>  / <span id="coorDico2"></span>
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/4f77-811573"
+              >Epreuve pratique sujet A groupe 103 </a
+            >.
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/9363-809360"
+              >Epreuve pratique sujet B groupe 103</a
+            >
+          </li>
+                    <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/4f77-811573"
+              >Epreuve pratique sujet A groupe 101-104 </a
+            >.
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/9363-809360"
+              >Epreuve pratique sujet B groupe 101-104</a
+            >
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        Les listes
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=228235b2976a4ce7f9a4cb06f2b61176"
+               >QCM GENUMSI</a>   / <span id="coorListe"></span>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/ef86-771873"
+              >Epreuve pratique sujet A groupe 101-104</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/c231-771863"
+              >Epreuve pratique sujet B groupe 101-104</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/09ce-771978"
+              >Epreuve pratique sujet A groupe 103</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/902e-771926"
+              >Epreuve pratique sujet B groupe 103</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>Les bases de python</li>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://genumsi.inria.fr/qcm.php?h=06b86087d9388db7e3bf1f39d2c04fe7"
+            >QCM GENUMSI</a
+          >
+          / <span id="coor"></span>
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            href="https://capytale2.ac-paris.fr/web/c/c639-689160"
+            >Epreuve pratique sujet A</a
+          >.
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://capytale2.ac-paris.fr/web/c/f20a-55414"
+            >Epreuve pratique sujet B</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://capytale2.ac-paris.fr/web/c/eadc-1972598"
+            >Correction de l'épreuve pratique</a
+          >
+        </li>
+      </ul>
+    </ol>
+    <ol reversed="true"> LES ANCIENS DEVOIRS
+      <li>
+        Devoir écrit algorithme de Tri, Algorithme Glouton, dichotomie, adresse
+        IP
+
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://nl.overleaf.com/read/rmhgwphtbnfz#6f2aee"
+              >Sujet (2h)</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        Notion de Réseau 2025 (45 mn)
+
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=324bdfc9f2c40800ec5f5e7b168a7470"
+              >QCM A
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=324bdfc9f2c40800ec5f5e7b168a7470"
+              >QCM B
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Notion de Réseau 2024 (45 mn)
+
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=78e31847de954fbace209dacb9bb49c5"
+              >QCM A
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=78e31847de954fbace209dacb9bb49c5"
+              >QCM B
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        Linux et Bash
+
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=474a6e6a6697a30c2889878ede6124ff"
+              >QCM A
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=78efe3c82bce8678bc88fd8ab1fd8b55"
+              >QCM B
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Assembleur
+
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/7773-506278"
+              >Epreuve pratique sujet A
+            </a>
+            /
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/acb7-1470285"
+              >Correction sujet A</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/0d37-1470292"
+              >Epreuve pratique sujet B
+            </a>
+            /
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/e757-1472187"
+              >Correction sujet B</a
+            >
+          </li>
+          Vous pouvez consultez le TP de base sur l'assembleur
+          <a target="_blank" href="TP_Assembleur_CPU.html"
+            >TP_Assembleur_CPU.pdf</a
+          >.
+          <p>
+            Vous pouvez accedez au simulateur Assembleur
+            <a target="_blank" href="https://www.peterhigginson.co.uk/AQA/"
+              >Simulateur AQA</a
+            >.
+          </p>
+        </ul>
+      </li>
+
+      <li>
+        Gestion de fichiers
+        <ul>
+          <!--<li><a target="_blank" href="https://capytale2.ac-paris.fr/web/c/a8c5-1376610">Epreuve pratique  sujet A 102-103</a> / <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/6ee7-1376689">Correction sujet A</a>
+      </li>
+      <li><a target="_blank" href="https://capytale2.ac-paris.fr/web/c/f211-1376771">Epreuve pratique  sujet B 102-103</a> / <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/9e35-1376848">Correction sujet B</a>
+      </li>-->
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/b46a-282595"
+              >Epreuve pratique sujet A
+            </a>
+            /
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/ba55-316446"
+              >Correction sujet A</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/8365-891016"
+              >Epreuve pratique sujet B
+            </a>
+            /
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/257e-1344962"
+              >Correction sujet B</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        Epreuve Pratique HTML ,CSS, JavaScript
+        <ul>
+          <li>
+            Sujet Groupe A:
+            <ul>
+              <li>
+                Exercice 1 :
+                <a
+                  target="_blank"
+                  href="https://capytale2.ac-paris.fr/web/c/6c7a-2793267"
+                  >HTML et CSS sujet A
+                </a>
+                <ul>
+                  Voir les images :
+                  <li>
+                    <a target="_blank" href="PateACrepesHTML.JPG"
+                      >PateACrepesHTML.JPG</a
+                    >
+                  </li>
+                  <li>
+                    <a target="_blank" href="PateACrepesCSS.JPG"
+                      >PateACrepesCSS.JPG</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Exercice 2 :
+                <a
+                  target="_blank"
+                  href="https://capytale2.ac-paris.fr/web/c/9441-2793281"
+                  >JavaScript pur sujet A
+                </a>
+              </li>
+              <li>
+                Exercice 3 :
+                <a
+                  target="_blank"
+                  href="https://capytale2.ac-paris.fr/web/c/0bce-2793295"
+                  >JavaScript et Evenements sujet A
+                </a>
+                <ul>
+                  Voir l'image :
+                  <li>
+                    <a target="_blank" href="evenmntIngredient.JPG"
+                      >evenmntIngredient.JPG</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <a
+                target="_blank"
+                href="https://capytale2.ac-paris.fr/web/c/36e9-2790420"
+                >Corrigé sujet A</a
+              >.
+            </ul>
+          </li>
+          <br />
+          <li>
+            Sujet Groupe B:
+            <ul>
+              <li>
+                Exercice 1 :
+                <a
+                  target="_blank"
+                  href="https://capytale2.ac-paris.fr/web/c/09e5-2802373"
+                  >HTML et CSS sujet B
+                </a>
+                <ul>
+                  Voir les images :
+                  <li>
+                    <a target="_blank" href="musiqueHTML.JPG"
+                      >musiqueHTML.JPG</a
+                    >
+                  </li>
+                  <li>
+                    <a target="_blank" href="musiqueCSS.JPG">musiqueCSS.JPG</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Exercice 2 :
+                <a
+                  target="_blank"
+                  href="https://capytale2.ac-paris.fr/web/c/9314-2805095"
+                  >JavaScript pur sujet B
+                </a>
+              </li>
+              <li>
+                Exercice 3 :
+                <a
+                  target="_blank"
+                  href="https://capytale2.ac-paris.fr/web/c/3764-2805419"
+                  >JavaScript et Evenements sujet B
+                </a>
+                <ul>
+                  Voir l'image :
+                  <li>
+                    <a target="_blank" href="evenementMusique.JPG"
+                      >evenementMusique.JPG</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <a
+                target="_blank"
+                href="https://capytale2.ac-paris.fr/web/c/86dd-2790417"
+                >Corrigé sujet B </a
+              >.
+            </ul>
+          </li>
+          <li>
+            Sujet Rattrapage:
+            <ul>
+              <li>
+                Exercice 1 :
+                <a
+                  target="_blank"
+                  href="https://capytale2.ac-paris.fr/web/c/65a1-2905511"
+                  >HTML et CSS
+                </a>
+                <ul>
+                  Voir les images :
+                  <li><a target="_blank" href="SAOHTML.jpg">SAOHTML.jpg</a></li>
+                  <li>
+                    <a target="_blank" href="SAOHTML2.jpg">SAOHTML2.jpg</a>
+                  </li>
+                  <li><a target="_blank" href="SAOCSS.jpg">SAOCSS.jpg</a></li>
+                </ul>
+              </li>
+              <li>
+                Exercice 2 :
+                <a
+                  target="_blank"
+                  href="https://capytale2.ac-paris.fr/web/c/c6f2-2893556"
+                  >JavaScript pur
+                </a>
+              </li>
+              <li>
+                Exercice 3 :
+                <a
+                  target="_blank"
+                  href="https://capytale2.ac-paris.fr/web/c/b0e0-2906361"
+                  >JavaScript et Evenements
+                </a>
+                <ul>
+                  Voir l'image :
+                  <li>
+                    <a target="_blank" href="choisirVoyelle.png"
+                      >choisirVoyelle.png</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <a
+                target="_blank"
+                href="https://capytale2.ac-paris.fr/web/c/d85d-2905823"
+                >Corrigé Rattrapage</a
+              >.
+            </ul>
+          </li>
+          <p>
+            Vous avez le droit à une fiche manucrite recto-verso et vous pouvez
+            consulter:
+          </p>
+          <ul>
+            <li>
+              HTML et CSS, le cours de base :
+              <a
+                target="_blank"
+                href="http://jerome.courtois2.free.fr/HTMLCSSPremiere.html"
+                >HTML et CSS</a
+              >
+            </li>
+            <li>
+              JavaScript le cours :
+              <a
+                target="_blank"
+                href="http://jerome.courtois2.free.fr/JavaScriptPremiere.html"
+                >http://jerome.courtois2.free.fr/JavaScriptPremiere.html</a
+              >
+            </li>
+            <li>
+              JavaScript la documentation :
+              <a target="_blank" href="https://devdocs.io/javascript/"
+                >https://devdocs.io/javascript/</a
+              >
+            </li>
+            <li>
+              CSS la documentation :
+              <a target="_blank" href="https://devdocs.io/css/"
+                >https://devdocs.io/css/</a
+              >
+            </li>
+            <li>
+              Pour débuguer JavaScript :
+              <a
+                target="_blank"
+                href="https://notebook.basthon.fr/?kernel=javascript"
+                >https://notebook.basthon.fr/?kernel=javascript</a
+              >. Attention on ne peut pas y mettre de HTML.
+            </li>
+          </ul>
+        </ul>
+      </li>
+
+
+      <li>
+        Les dictionnaires
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=e25100b9303308f539a9c51a713a1e98"
+              >QCM GENUMSI sujet A</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=8187b37680fea55922abd649408bae78"
+              >QCM GENUMSI sujet B</a
+            >
+          </li>
+
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/4f77-811573"
+              >Epreuve pratique sujet A groupe 102-103</a
+            >.
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/9363-809360"
+              >Epreuve pratique sujet B groupe 102-103</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        Les listes et les dictionnaires
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=c4afabc610d158965c14e6606844314a"
+              >QCM GENUMSI</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/f18a-798042"
+              >Epreuve pratique sujet A groupe 106-107</a
+            >.
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/8acf-800496"
+              >Epreuve pratique sujet B groupe 106-107</a
+            >
+          </li>
+        </ul>
+      </li>
+
+
+      <li>
+        Circuit et logique booléenne
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=d25b997761dfba550b90134688860bde"
+              >QCM GENUMSI sujet A</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=06fc970397f04427a57296e43430ac30"
+              >QCM GENUMSI sujet B</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://ent.iledefrance.fr/exercizer#/dashboard"
+              >Epreuve pratique Sujet Logisim</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        HTML et CSS (Attention sans fiche de note)
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://genumsi.inria.fr/qcm.php?h=a4f90e1e4324ff2f307cd978a83ac6ab"
+              >QCM GENUMSI (30 mn)</a
+            >
+          </li>
+          <li>
+            Si vous avez terminé, commencez ou continuez le cours sur le
+            JavaScript
+            <a target="_blank" href="JavaScriptPremiere.html"
+              >Activité JavaScript</a
+            >
+          </li>
+          <li>
+            Et faire les exercices et les exemples sur
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/c55b-2601207"
+              >capytale</a
+            >
+          </li>
+          <li>
+            Mettre un lien <strong>cliquable</strong> de votre Projet sur
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/e7ef-1221778"
+              >capytale</a
+            >.<br />
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>QCM HTML ,CSS, JavaScript</li>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://genumsi.inria.fr/qcm.php?h=804609bdd8bec2a14f61f4bc2aef6601"
+            >QCM GENUMSI groupe A
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://genumsi.inria.fr/qcm.php?h=39641fcc78aa537fa5c89730656401f5"
+            >QCM GENUMSI groupe B
+          </a>
+        </li>
+        <li>
+          Si vous avez terminé, commencez ou continuez le cours sur le
+          JavaScript
+          <a target="_blank" href="JavaScriptPremiere.html"
+            >Activité JavaScript</a
+          >
+        </li>
+        <li>
+          Et faire les exercices et les exemples sur
+          <a
+            target="_blank"
+            href="https://capytale2.ac-paris.fr/web/c/c55b-2601207"
+            >capytale</a
+          >
+        </li>
+      </ul>
+      <br /><br />
+
+      <li>
+        Devoir écrit algorithme de Tri
+
+        <ul>
+          <li>
+            <a target="_blank" href="https://fr.overleaf.com/read/rsjtvpfmvchj"
+              >Algorithme de Tri (1h)
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        Devoir Pratique Final 2023 (2h)
+
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/6f7c-1695415"
+              >Groupe A</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/140d-1702401"
+              >Groupe B</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        Devoir Pratique Final 2025 (2h)
+
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/c07b-3648454"
+              >Groupe A</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://capytale2.ac-paris.fr/web/c/b3ba-3648456"
+              >Groupe B</a
+            >
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <div style="text-align: center; font-family: Comic Sans MS">
+      <h2>
+        <a href="http://jerome.courtois2.free.fr/SiteWeb_2024.html"
+          >Site Web Premiére (2023/24)</a
+        >
+      </h2>
+
+
+
+      <!--<p>ATTENTION, sur Socrative si vous ne voulez plus répondre à une
+question, il faut rafraichir la page.<br>
+</p>-->
+
+    </div>
+
+    <script src="nscript.js"></script>
+  </body>
+</html>
