@@ -75,7 +75,7 @@
     <key>backgroundOpenSEBConfig</key>
     <false />
     <key>blacklistURLFilter</key>
-    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mediacentre(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//collaborativeeditor(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//sharebigfiles(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//scrapbook(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mindmap(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//community(()|(\?.*?))$;https:\/\/capytale2\.ac-paris\.fr\/web\/(code|c)\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{7}$</string>
+    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mediacentre(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//collaborativeeditor(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//sharebigfiles(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//scrapbook(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mindmap(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//community(()|(\?.*?))$;https:\/\/capytale2\.ac-paris\.fr\/web\/c\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{7}$</string>
     <key>blockPopUpWindows</key>
     <false />
     <key>browserExamKey</key>
@@ -209,7 +209,7 @@
     <key>enableZoomText</key>
     <false />
     <key>examKeySalt</key>
-    <data>2oBrSd+vXWwO/uIrOjAZEpORw5RQtBS5HWMlSdu2zoo=</data>
+    <data>H3S2lCYb2Pj57p+q7BjX70fLCmf34/ZzjH1xeqrj+x0=</data>
     <key>examSessionClearCookiesOnEnd</key>
     <true />
     <key>examSessionClearCookiesOnStart</key>
@@ -1696,7 +1696,7 @@
         <key>regex</key>
         <true />
         <key>expression</key>
-        <string>https:\/\/capytale2\.ac-paris\.fr\/web\/(code|c)\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{7}$</string>
+        <string>https:\/\/capytale2\.ac-paris\.fr\/web\/c\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{7}$</string>
         <key>action</key>
         <integer>0</integer>
       </dict>
