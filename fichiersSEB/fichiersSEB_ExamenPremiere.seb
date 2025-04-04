@@ -75,7 +75,7 @@
     <key>backgroundOpenSEBConfig</key>
     <false />
     <key>blacklistURLFilter</key>
-    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mediacentre(()|(\?.*?))$</string>
+    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mediacentre(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//collaborativeeditor(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//sharebigfiles(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//scrapbook(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mindmap(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//community(()|(\?.*?))$</string>
     <key>blockPopUpWindows</key>
     <false />
     <key>browserExamKey</key>
@@ -127,7 +127,7 @@
     <key>downloadDirectoryOSX</key>
     <string>~/Downloads</string>
     <key>downloadDirectoryWin</key>
-    <string />
+    <string>%USERPROFILE%\Desktop</string>
     <key>downloadPDFFiles</key>
     <false />
     <key>embeddedCertificates</key>
@@ -209,7 +209,7 @@
     <key>enableZoomText</key>
     <true />
     <key>examKeySalt</key>
-    <data>NC/fz4qvd2iLoB16gUMc6+e45tg5Eg4zntfYMwdF1CU=</data>
+    <data>snbtubHWTdpHh61eT+O7rkMgJLn5vMMTkyWKBnWxZY0=</data>
     <key>examSessionClearCookiesOnEnd</key>
     <true />
     <key>examSessionClearCookiesOnStart</key>
@@ -1640,13 +1640,63 @@
         <key>action</key>
         <integer>0</integer>
       </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://ent.iledefrance.fr/collaborativeeditor</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://ent.iledefrance.fr/sharebigfiles</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://ent.iledefrance.fr/scrapbook</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://ent.iledefrance.fr/mindmap</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://ent.iledefrance.fr/community</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
     </array>
     <key>urlFilterTrustedContent</key>
     <true />
     <key>useAsymmetricOnlyEncryption</key>
     <false />
     <key>useTemporaryDownUploadDirectory</key>
-    <true />
+    <false />
     <key>whitelistURLFilter</key>
     <string>^https:\/\/((((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr)))|(((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me)))|(((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me))\/.*?))(()|(\?.*?))$</string>
     <key>zoomMode</key>
