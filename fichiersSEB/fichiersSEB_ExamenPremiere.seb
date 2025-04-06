@@ -275,7 +275,7 @@
     <key>newBrowserWindowAllowAddressBar</key>
     <false />
     <key>newBrowserWindowAllowReload</key>
-    <false />
+    <true />
     <key>newBrowserWindowByLinkBlockForeign</key>
     <false />
     <key>newBrowserWindowByLinkHeight</key>
@@ -291,7 +291,7 @@
     <key>newBrowserWindowByScriptPolicy</key>
     <integer>2</integer>
     <key>newBrowserWindowNavigation</key>
-    <false />
+    <true />
     <key>newBrowserWindowShowReloadWarning</key>
     <false />
     <key>newBrowserWindowShowURL</key>
