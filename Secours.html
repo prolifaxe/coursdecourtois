@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta charset="utf-8" />
+    <!-- base href="https://www.math93.com/lycee/nsi-1ere/nsi-1ere.html" -->
+
+    <title>Evaluation Première</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+        <link rel="icon" href="https://cdn.glitch.global/97872096-b7d8-4ed8-8784-9e3afaaeb597/mirror.png?v=1739444980177" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <br />
+    <div style="text-align: center; font-family: Comic Sans MS">
+      <h1>NSI premiére, Les évaluations :</h1>
+      <h2>QCM sur GENUMSI et/ou Epreuve pratique sur Capytale;</h2>
+ </div>
+  <!--Enlevez les commentaires poour la page d'évaluation courante
+     <div style="text-align: center; font-family: Comic Sans MS">
+      <p>
+        <a
+          href="https://cdn.glitch.global/97872096-b7d8-4ed8-8784-9e3afaaeb597/fichiersSEB_ExamenPremiere%20.seb?v=1739457414176"
+          >Télécharger puis lancer le fichier .seb pour passer une évaluation
+          sur Capytale et/ou un QCM GenumSi</a
+        >
+      </p>
+
+      <p>
+        <a href="https://safeexambrowser.org/download_en.html"
+          >Installation de SEB
+        </a>
+      </p>
+
+    </div>
+  -->
+    
+    
+<!--Enlevez les commentaires dans le cas du besoin d'un QCM GenumSI
+       <div style="text-align: center; font-family: Comic Sans MS">
+      <p>
+        Pour vous connecter sur GenumSi, faire la concaténation
+        Jour+Mois+Classe+Prenom[0], dans l'ordre, c'est à dire :
+      </p>
+
+      <ul>
+        <li>Du jour de votre date de naissance;</li>
+        <li>Du Mois de votre date de naissance en deux chiffres;</li>
+        <li>Du numero de votre classe;</li>
+        <li>
+          De la<strong> première lettre </strong>de votre prénom transformée en
+          deux chiffres (sachant que a vaut 01, b vaut 02, etc ...);
+        </li>
+      </ul>
+      <p>
+        Exemple: François né le 05/02/2004 de la classe 111 utilisera
+        l'identifiant 50211106. La concaténation jour+mois ne suffit pas à cause
+        du
+        <a
+          target="_blanck"
+          href="https://fr.wikipedia.org/wiki/Paradoxe_des_anniversaires"
+          >Paradoxe des Anniversaires </a
+        >.
+      </p>
+
+      <p id="montexte">Mettez votre prénom en minuscule sans accent:</p>
+      Votre prénom est <span id="prenom"></span>
+      <script>
+        document.getElementById("prenom").innerHTML =
+          '<input type="text" name="Valeur_Reponse" id="Id_Reponse" />';
+      </script>
+
+      <p>
+        Jour de naissance:
+        <span id="id_jours"></span>
+        Mois de naissance:
+        <span id="id_mois"></span>
+        Classe:
+        <span id="classes"></span>
+        <script>
+          var mesClasses;
+          mesClasses =
+            '<select id="choixclasse" name="classe" ><option value=""> Choisir une classe </option><option value="101"> 101 </option>';
+         
+          mesClasses =
+            mesClasses +
+            '<option value="102"> 102 </option><option value="103"> 103 </option><option value="104"> 104 </option><option value="105"> 105 </option>';
+          mesClasses =
+            mesClasses +
+            '<option value="106"> 106 </option><option value="107"> 107 </option>';
+          mesClasses =
+            mesClasses +
+            '<option value="T"> Terminale </option>';
+          mesClasses =
+            mesClasses +
+            '<input type="button" value="Valider" onclick="selection();" /> ';
+
+          document.getElementById("classes").innerHTML = mesClasses;
+        </script>
+      </p>
+      <p>Votre identifiant GenumSI est <span id="identifiant">????</span></p>
+      <script src="script.js"></script>
+    </div>
+-->
+    
+    
+   
+    <script>var maintenant=new Date();
+    
+   var maintenant=new Date();
+var jour=maintenant.getDate();
+var mois=maintenant.getMonth()+1;
+var an=maintenant.getFullYear();
+if (mois<10){
+document.write("<h1>"+jour,"/0",mois,"/",an,".</h1>");
+  }
+else{
+  document.write("<h1>"+jour,"/",mois,"/",an,".</h1>");
+}
+    </script>
+
+
+
+        Opération sur les tables
+        <ul> 
+          <!--<li><a target="_blank" href="https://capytale2.ac-paris.fr/web/c/a8c5-1376610">Epreuve pratique  sujet A 102-103</a> / <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/6ee7-1376689">Correction sujet A</a>
+      </li>
+      <li><a target="_blank" href="https://capytale2.ac-paris.fr/web/c/f211-1376771">Epreuve pratique  sujet B 102-103</a> / <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/9e35-1376848">Correction sujet B</a>
+      </li>-->
+                             <h3>
+            Sujets pour la 103
+          </h3>
+         <li><a target="_blank" href="https://capytale2.ac-paris.fr/web/c/8c89-3122257">Epreuve pratique  sujet A </a> / 
+           <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/d1e7-3085446">Correction sujet A</a>
+      </li>
+     
+         
+           <li><a target="_blank" href="https://capytale2.ac-paris.fr/web/c/da94-3086197">Epreuve pratique  sujet B 
+             </a> /
+             <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/79aa-6300755">Correction sujet B</a>
+      </li>
+          
+                           <h3>
+            Sujets pour la 101-104
+          </h3>
+         <li><a target="_blank" href="https://capytale2.ac-paris.fr/web/c/8c89-3122257">Epreuve pratique  sujet A</a> / 
+           <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/d1e7-3085446">Correction sujet A</a>
+      </li>
+     
+         
+           <li><a target="_blank" href="https://capytale2.ac-paris.fr/web/c/da94-3086197">Epreuve pratique  sujet B </a> /
+             <a target="_blank" href="https://capytale2.ac-paris.fr/web/c/79aa-6300755">Correction sujet B</a>
+      </li>
+     
+     
+        </ul>
+
+      <br>
+      
+
+   
+
+      <!--<p>ATTENTION, sur Socrative si vous ne voulez plus répondre à une
+question, il faut rafraichir la page.<br>
+</p>-->
+ <a href="https://capytale2.ac-paris.fr/web/c/cfb0-1524735">     <img
+        style="width: 550px; height: 336px"
+        alt=""
+        src="https://cdn.glitch.global/96350c47-5e9d-4c1e-bb43-657b7ac11a65/mirror.gif?v=1705758007517"
+      /></a>
+    </div>
+
+<!--POur afficher les exercices javascript-->
+<?php
+            $todaysDate = date("Y-m-d");
+            $javaCriptDate="2025-03-10";
+        
+            if($todaysDate > $javaCriptDate){
+                echo "<script src='scriptDSjavascript.js'></script>";
+            }
+        ?>
+  <!--POur afficher les exercices operations sur les tables-->
+<?php
+            $todaysDate = date("Y-m-d");
+            $OperationDate="2025-04-09";
+        
+            if($todaysDate >= $OperationDate){
+                echo "<script src='scriptDSOperationTable.js'></script>";
+            }
+        ?>
+       
+    <script src="nscript.js"></script>
+
+
+  </body>
+</html>
+
+
+
