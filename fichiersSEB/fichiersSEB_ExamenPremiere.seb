@@ -75,7 +75,7 @@
     <key>backgroundOpenSEBConfig</key>
     <false />
     <key>blacklistURLFilter</key>
-    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mediacentre(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//collaborativeeditor(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//sharebigfiles(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//scrapbook(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mindmap(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//community(()|(\?.*?))$;https:\/\/capytale2\.ac-paris\.fr\/web\/(code|c)\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{7}$</string>
+    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mediacentre(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//collaborativeeditor(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//sharebigfiles(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//scrapbook(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mindmap(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//community(()|(\?.*?))$;https:\/\/capytale2\.ac-paris\.fr\/web\/(code|c)\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{2,}$;https:\/\/capytale2\.ac-paris\.fr\/p\/basthon\/n\/\?kernel=python3-legacy&amp;mode=assignment&amp;id=\d(?!.*&amp;extensions=sequenced)[^\s"]*</string>
     <key>blockPopUpWindows</key>
     <false />
     <key>browserExamKey</key>
@@ -209,7 +209,7 @@
     <key>enableZoomText</key>
     <false />
     <key>examKeySalt</key>
-    <data>2oBrSd+vXWwO/uIrOjAZEpORw5RQtBS5HWMlSdu2zoo=</data>
+    <data>xtREB3eExj+ab7cn8TirBHI+lQrmORGbv/eS1tYdpns=</data>
     <key>examSessionClearCookiesOnEnd</key>
     <true />
     <key>examSessionClearCookiesOnStart</key>
@@ -275,13 +275,13 @@
     <key>newBrowserWindowAllowAddressBar</key>
     <false />
     <key>newBrowserWindowAllowReload</key>
-    <true />
+    <false />
     <key>newBrowserWindowByLinkBlockForeign</key>
     <false />
     <key>newBrowserWindowByLinkHeight</key>
     <string>100%</string>
     <key>newBrowserWindowByLinkPolicy</key>
-    <integer>2</integer>
+    <integer>1</integer>
     <key>newBrowserWindowByLinkPositioning</key>
     <integer>2</integer>
     <key>newBrowserWindowByLinkWidth</key>
@@ -291,7 +291,7 @@
     <key>newBrowserWindowByScriptPolicy</key>
     <integer>2</integer>
     <key>newBrowserWindowNavigation</key>
-    <true />
+    <false />
     <key>newBrowserWindowShowReloadWarning</key>
     <false />
     <key>newBrowserWindowShowURL</key>
@@ -1696,7 +1696,17 @@
         <key>regex</key>
         <true />
         <key>expression</key>
-        <string>https:\/\/capytale2\.ac-paris\.fr\/web\/(code|c)\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{7}$</string>
+        <string>https:\/\/capytale2\.ac-paris\.fr\/web\/(code|c)\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{2,}$</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <true />
+        <key>expression</key>
+        <string>https:\/\/capytale2\.ac-paris\.fr\/p\/basthon\/n\/\?kernel=python3-legacy&amp;mode=assignment&amp;id=\d(?!.*&amp;extensions=sequenced)[^\s"]*</string>
         <key>action</key>
         <integer>0</integer>
       </dict>
