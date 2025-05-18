@@ -75,7 +75,7 @@
     <key>backgroundOpenSEBConfig</key>
     <false />
     <key>blacklistURLFilter</key>
-    <string>^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//web/my\?legacy$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//my(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\//bibliotheque(()|(\?.*?))$;^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mediacentre(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//collaborativeeditor(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//sharebigfiles(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//scrapbook(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mindmap(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//community(()|(\?.*?))$;https:\/\/capytale2\.ac-paris\.fr\/web\/c\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{7}$</string>
+    <string>^https:\/\/((((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net)))|(((psn\.monlycee\.net)|(.*?\.psn\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net)))|(((web-mail\.monlycee\.net)|(.*?\.web-mail\.monlycee\.net))\/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//welcome(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/((/workspace/.*?)|(/workspace/.*?))(()|(\?.*?))$;^https:\/\/((drive\.monlycee\.net)|(.*?\.drive\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mediacentre(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//collaborativeeditor(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//sharebigfiles(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//scrapbook(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//mindmap(()|(\?.*?))$;^https:\/\/((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\//community(()|(\?.*?))$</string>
     <key>blockPopUpWindows</key>
     <false />
     <key>browserExamKey</key>
@@ -107,7 +107,7 @@
     <key>browserUserAgentWinTouchModeIPad</key>
     <string>Mozilla/5.0 (iPad; CPU OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.3 Mobile/15E216 Safari/605.1.15</string>
     <key>browserViewMode</key>
-    <integer>1</integer>
+    <integer>0</integer>
     <key>browserWindowAllowAddressBar</key>
     <false />
     <key>browserWindowAllowReload</key>
@@ -209,7 +209,7 @@
     <key>enableZoomText</key>
     <false />
     <key>examKeySalt</key>
-    <data>H3S2lCYb2Pj57p+q7BjX70fLCmf34/ZzjH1xeqrj+x0=</data>
+    <data>50v04WSN6V5ASxaZO36KmlUXcpt4EEhCT31++akHjNM=</data>
     <key>examSessionClearCookiesOnEnd</key>
     <true />
     <key>examSessionClearCookiesOnStart</key>
@@ -275,7 +275,7 @@
     <key>newBrowserWindowAllowAddressBar</key>
     <false />
     <key>newBrowserWindowAllowReload</key>
-    <false />
+    <true />
     <key>newBrowserWindowByLinkBlockForeign</key>
     <false />
     <key>newBrowserWindowByLinkHeight</key>
@@ -291,7 +291,7 @@
     <key>newBrowserWindowByScriptPolicy</key>
     <integer>2</integer>
     <key>newBrowserWindowNavigation</key>
-    <false />
+    <true />
     <key>newBrowserWindowShowReloadWarning</key>
     <false />
     <key>newBrowserWindowShowURL</key>
@@ -1469,9 +1469,9 @@
     <key>sebServerURL</key>
     <string />
     <key>sebServiceIgnore</key>
-    <true />
+    <false />
     <key>sebServicePolicy</key>
-    <integer>1</integer>
+    <integer>2</integer>
     <key>sendBrowserExamKey</key>
     <false />
     <key>setVmwareConfiguration</key>
@@ -1552,7 +1552,7 @@
       </dict>
       <dict>
         <key>active</key>
-        <true />
+        <false />
         <key>regex</key>
         <false />
         <key>expression</key>
@@ -1562,7 +1562,7 @@
       </dict>
       <dict>
         <key>active</key>
-        <true />
+        <false />
         <key>regex</key>
         <false />
         <key>expression</key>
@@ -1572,7 +1572,7 @@
       </dict>
       <dict>
         <key>active</key>
-        <true />
+        <false />
         <key>regex</key>
         <false />
         <key>expression</key>
@@ -1692,13 +1692,83 @@
       </dict>
       <dict>
         <key>active</key>
-        <true />
+        <false />
         <key>regex</key>
         <true />
         <key>expression</key>
-        <string>https:\/\/capytale2\.ac-paris\.fr\/web\/c\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{7}$</string>
+        <string>https:\/\/capytale2\.ac-paris\.fr\/web\/(code|c)\/(?!cfb0-1524735$)(?!8c89-3122257$)(?!da94-3086197$)[A-Za-z0-9]{4}-\d{2,}$</string>
         <key>action</key>
         <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <false />
+        <key>regex</key>
+        <true />
+        <key>expression</key>
+        <string>https:\/\/capytale2\.ac-paris\.fr\/p\/basthon\/n\/\?kernel=python3-legacy&amp;mode=assignment&amp;id=\d(?!.*&amp;extensions=sequenced)[^\s"]*</string>
+        <key>action</key>
+        <integer>0</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://notebook.basthon.fr/*</string>
+        <key>action</key>
+        <integer>1</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://prolifaxe.github.io/coursdecourtois/NSI_premiere/Devoirs/*</string>
+        <key>action</key>
+        <integer>1</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://www.peterhigginson.co.uk/AQA/*</string>
+        <key>action</key>
+        <integer>1</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>http://www.peterhigginson.co.uk/AQA/*</string>
+        <key>action</key>
+        <integer>1</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://matomo.ac-paris.fr/</string>
+        <key>action</key>
+        <integer>1</integer>
+      </dict>
+      <dict>
+        <key>active</key>
+        <true />
+        <key>regex</key>
+        <false />
+        <key>expression</key>
+        <string>https://cdn.ac-paris.fr/</string>
+        <key>action</key>
+        <integer>1</integer>
       </dict>
     </array>
     <key>urlFilterTrustedContent</key>
@@ -1708,7 +1778,7 @@
     <key>useTemporaryDownUploadDirectory</key>
     <false />
     <key>whitelistURLFilter</key>
-    <string>^https:\/\/((((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr)))|(((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me)))|(((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me))\/.*?))(()|(\?.*?))$</string>
+    <string>^https:\/\/((((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr)))|(((ent\.iledefrance\.fr)|(.*?\.ent\.iledefrance\.fr))\/.*?))(()|(\?.*?))$;^https:\/\/((capytale2\.ac-paris\.fr)|(.*?\.capytale2\.ac-paris\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((genumsi\.inria\.fr)|(.*?\.genumsi\.inria\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((monlycee\.net)|(.*?\.monlycee\.net))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((notebook\.basthon\.fr)|(.*?\.notebook\.basthon\.fr))\/((/.*?)|(/.*?))(()|(\?.*?))$;^https:\/\/((prolifaxe\.github\.io)|(.*?\.prolifaxe\.github\.io))\/((/coursdecourtois/NSI_premiere/Devoirs/.*?)|(/coursdecourtois/NSI_premiere/Devoirs/.*?))(()|(\?.*?))$;^https:\/\/((www\.peterhigginson\.co\.uk)|(.*?\.www\.peterhigginson\.co\.uk))\/((/AQA/.*?)|(/AQA/.*?))(()|(\?.*?))$;^http:\/\/((www\.peterhigginson\.co\.uk)|(.*?\.www\.peterhigginson\.co\.uk))\/((/AQA/.*?)|(/AQA/.*?))(()|(\?.*?))$;^https:\/\/((((matomo\.ac-paris\.fr)|(.*?\.matomo\.ac-paris\.fr)))|(((matomo\.ac-paris\.fr)|(.*?\.matomo\.ac-paris\.fr))\/.*?))(()|(\?.*?))$;^https:\/\/((((cdn\.ac-paris\.fr)|(.*?\.cdn\.ac-paris\.fr)))|(((cdn\.ac-paris\.fr)|(.*?\.cdn\.ac-paris\.fr))\/.*?))(()|(\?.*?))$;^https:\/\/((((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me)))|(((petalite-glitter-abrosaurus\.glitch\.me)|(.*?\.petalite-glitter-abrosaurus\.glitch\.me))\/.*?))(()|(\?.*?))$</string>
     <key>zoomMode</key>
     <integer>1</integer>
     <key>clipboardPolicy</key>
