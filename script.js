@@ -6,7 +6,7 @@
 // Use your menus or right-click / control-click and choose "Inspect" > "Console"
 
 
-/* 
+/*
 Make the "Click me!" button move when the visitor clicks it:
 - First add the button to the page by following the steps in the TODO 🚧
 */
@@ -34,14 +34,14 @@ filer.forEach((f) => {
 });
 	function MaFonction(reponse)
 	{
-		
-		
+
+
 	   var codage="",lettre,chiffre,alpha="abcdefghijklmnopqrstuvwxyz";
      reponse=reponse.trim();//enléve les blancs
 	   reponse=strNoAccent(reponse);
 	   reponse=reponse.toLowerCase();
 	   reponse=reponse.replace('-', '');
-	   
+
 	   for(var i=0;i<reponse.length;i++){
 			lettre=reponse.charAt(i);
 			chiffre=alpha.indexOf(lettre)+1;
@@ -50,13 +50,13 @@ filer.forEach((f) => {
       }
 			codage=codage+chiffre;
 	   }
-	   
+
 	return codage;
 	}
 	function strNoAccent(a) {
   return a.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
-//<option value="zh"> Chinois </option>
+
 
 function listeJour(){
 	var sel
@@ -91,7 +91,7 @@ listeMois();
 	var moncodage = document.getElementById("Id_Reponse").value;
   moncodage=moncodage.trim();
 	var verif=moncodage!="";
-	
+
    if (document.getElementById("ICI")!=null){
 	document.getElementById("ICI").innerHTML=MaFonction(moncodage);;
    }
@@ -107,19 +107,17 @@ listeMois();
    }
 	const selecteur3 = document.getElementById("choixclasse");
     const monChoix3=selecteur3[selecteur3.selectedIndex];
-	
-	
+
+
   if  (monChoix1.value!="" && monChoix2.value!="" && monChoix3.value!="" && verif ){
- 
+
       if (monChoix3.value=="T"){
 
           document.getElementById("identifiant").innerHTML=monChoix1.value + monmois+moncodage;
-      } 
+      }
       else{
 
           document.getElementById("identifiant").innerHTML=monChoix1.value + monmois+monChoix3.value+moncodage;
       }
     }
   }
-  
-  
