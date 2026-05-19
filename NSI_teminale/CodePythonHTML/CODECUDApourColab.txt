@@ -1,0 +1,95 @@
+
+
+#include <stdio.h>
+#include "time.h"
+
+// Fonction d'addition de vecteurs CPU 
+void addVecteur(int *a,int *b,int *c,int L){
+	int i;
+	for(i=0;i<L;i++)
+	{
+	 	c[i]=a[i]+b[i];
+	}
+}
+
+// Fonction d'addition de vecteurs GPU (Calcul paralléle)
+__global__ void addVecteurkernel(int *a,int *b,int *c,int L){
+	int idx=threadIdx.x+blockDim.x*blockIdx.x;
+	c[idx]=a[idx]+b[idx];
+}
+
+int main(void){
+
+//Déclaration des variables CPU
+ clock_t startCPU, endCPU;
+ double cpu_time_used;
+ int i,*a,*b,*c,*result;
+ int *aCuda,*bCuda,*cCuda;
+ int BLOC=16;
+ int NTHREAD=1024;
+ int L=BLOC*NTHREAD;
+
+//Déclaration et allocation des tableaux CPU
+ a=(int*)calloc(L,sizeof(int));
+ b=(int*)calloc(L,sizeof(int));
+ c=(int*)calloc(L,sizeof(int));
+ result=(int*)calloc(L,sizeof(int));
+
+//Déclaration et allocation des tableaux GPU aCuda,bCuda et cCuda	
+ cudaMalloc(&aCuda,L*sizeof(int));
+ cudaMalloc(&bCuda,L*sizeof(int));
+ cudaMalloc(&cCuda,L*sizeof(int));
+
+// Création des évenements de mesure du temps de calcul GPU
+float TimerV;
+cudaEvent_t start,stop;
+cudaEventCreate(&start);
+cudaEventCreate(&stop);
+
+// remplissage des tabeaux CPU 
+ for(i=0;i<L;i++){
+   a[i]=i;
+   b[i]=9*i;
+}
+
+//Lancement de la fonction CPU et mesure de temps de calcul
+startCPU = clock();
+addVecteur(a,b,c,L);
+endCPU = clock();
+cpu_time_used = ((double) (endCPU - startCPU));
+printf("temps CPU en ms %f\n",cpu_time_used);
+
+//Chargement des données CPU dans le GPU (a vers aCuda,b vers bCuda,c vers cCuda)
+cudaMemcpy(aCuda,a,L*sizeof(int),cudaMemcpyHostToDevice);
+cudaMemcpy(bCuda,b,L*sizeof(int),cudaMemcpyHostToDevice);
+
+//Lancement de la fonction CPU et mesure de temps de calcul
+cudaEventRecord(start,0);
+ 	addVecteurkernel<<<BLOC,NTHREAD>>>(aCuda,bCuda,cCuda,L);
+cudaEventRecord(stop,0);
+cudaEventSynchronize(stop);
+cudaEventElapsedTime(&TimerV, start, stop);
+
+//Copie des resultats GPU vers le CPU (cCuda vers result)
+ cudaMemcpy(result,cCuda,L*sizeof(int),cudaMemcpyDeviceToHost);
+
+// Comparaison des résultats entre calculs CPU et GPU
+for(i=0;i<L;i++){
+  if(result[i]!=c[i]){
+      printf("error\n");
+	exit(0);
+  }
+}
+
+printf("temps GPU en ms %f\n",TimerV);
+
+//libération des mémoires CPU
+free(a);free(b);free(c);
+
+//libération des mémoires GPU
+cudaFree(aCuda);cudaFree(bCuda);cudaFree(cCuda);
+
+//retour de fin de fonction
+return 0;
+}
+

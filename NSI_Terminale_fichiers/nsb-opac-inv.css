@@ -1,0 +1,10 @@
+.nsb_container{ }
+.pinit {margin-right:45px;}
+span.pinit > span:first-child {top:-5px;}
+
+.nsb_link{float:left;}
+.nsb_container a img{opacity:1;filter:alpha(opacity=100);}
+.nsb_container a img:hover{opacity:0.4;filter:alpha(opacity=40);}
+
+/*.fb-like span{overflow:visible !important; width:450px !important; margin-right:-375px;}
+.fb_iframe_widget{width:100%;}*/

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fr-fr" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8" />
+	<base href="https://www.math93.com/lycee/nsi-1ere/nsi-1ere/146-pedagogie/lycee/nsi/998-nsi-numerique-et-sciences-informatiques-html-et-css-2.html" />
+	<meta name="keywords" content="PHP, HTML, Client-Serveur" />
+	<meta name="author" content="Super User" />
+	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="description" content="NSI (Numérique et Sciences Informatiques) : PHP et Interation Client-Serveur : Une présentation" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>NSI (Numérique et Sciences Informatiques) : PHP et Interation Client-Serveur : Présentation</title>
+	<link href="/templates/protostar_math93/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/plugins/system/jcemediabox/css/jcemediabox.css?1d12bb5a40100bbd1841bfc0e498ce7b" rel="stylesheet" />
+	<link href="/plugins/system/jcemediabox/themes/standard/css/style.css?50fba48f56052a048c5cf30829163e4d" rel="stylesheet" />
+	<link href="/templates/protostar_math93/css/template.css?8dde18732c0ed04b3a7a66541b64f5f7" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+	<link href="/templates/protostar_math93/css/user.css?8dde18732c0ed04b3a7a66541b64f5f7" rel="stylesheet" />
+	<link href="/modules/mod_nice_social_bookmark/css/nsb-opac-inv.css" rel="stylesheet" />
+	<link href="/media/mod_osdonate/css/style.css" rel="stylesheet" />
+	<style>
+.openSocialShareVerticalSharing {position: fixed;top:0px;left:0px;}
+	h1, h2, h3, h4, h5, h6, .site-title {
+		font-family: 'Open Sans', sans-serif;
+	}
+	body.site {
+		border-top: 3px solid #538207;
+		background-color: #f4f6f7;
+	}
+	a {
+		color: #538207;
+	}
+	.nav-list > .active > a,
+	.nav-list > .active > a:hover,
+	.dropdown-menu li > a:hover,
+	.dropdown-menu .active > a,
+	.dropdown-menu .active > a:hover,
+	.nav-pills > .active > a,
+	.nav-pills > .active > a:hover,
+	.btn-primary {
+		background: #538207;
+	}
+.nsb_container a.icons{
+	padding:px; float:left; display:inline-block;
+}#plusone{padding:px !important;}
+	</style>
+	<script src="/plugins/content/simplifiedsocialshare/simplifiedsocialshare.js"></script>
+	<script src="/media/jui/js/jquery.min.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/media/system/js/caption.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/media/jui/js/bootstrap.min.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script src="/plugins/system/jcemediabox/js/jcemediabox.js?0c56fee23edfcb9fbdfe257623c5280e"></script>
+	<script src="/templates/protostar_math93/js/template.js?8dde18732c0ed04b3a7a66541b64f5f7"></script>
+	<script>
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+JCEMediaBox.init({popup:{width:"",height:"",legacy:0,lightbox:0,shadowbox:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:0,scrolling:"fixed",close:2,labels:{'close':'Fermer','next':'Suivant','previous':'Précédent','cancel':'Annuler','numbers':'{$current} sur {$total}'},cookie_expiry:"",google_viewer:0},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/",imgpath:"plugins/system/jcemediabox/img",theme:"standard",themecustom:"",themepath:"plugins/system/jcemediabox/themes",mediafallback:0,mediaselector:"audio,video"});
+	</script>
+	<!-- Start: Google Structured Data -->
+
+            <!-- End: Google Structured Data -->
+
+	<!--[if lt IE 9]><script src="/media/jui/js/html5.js"></script><![endif]-->
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34983880-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Universal Google Analytics Plugin by PB Web Development -->
+
+
+</head>
+<body class="site com_content view-article no-layout no-task itemid-1322">
+	<!-- Body -->
+	<div class="body">
+		<div class="container">
+			<!-- Header -->
+			<header class="header" role="banner">
+				<div class="header-inner clearfix">
+					<a class="brand pull-left" href="/">
+																<div class="site-description">Une Histoire des Mathématiques</div>											</a>
+					<div class="header-search pull-right">
+						<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script><form action="http://www.google.fr" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-4115507798205744:1851995435" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="50" />
+    <input type="submit" name="sa" value="Rechercher" />
+  </div>
+</form>
+
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  }
+})});
+</script><script>
+function compteur()
+    {
+    var c = 0;
+    return function incrementer(x=1)
+ {
+c=c+x;
+return c;
+ };
+    }
+
+var fonction = compteur();
+var proba = compteur();
+var suite = compteur();
+var espace = compteur();
+var repere = compteur();
+var ps=compteur();
+var sujet=compteur();
+var algo=compteur();
+var trigo=compteur();
+</script>
+					</div>
+				</div>
+			</header>
+
+								<div class="moduletable">
+
+
+
+		</div>
+
+			<div class="row-fluid">
+								<main id="content" role="main" class="span9">
+					<!-- Begin Content -->
+
+					<div id="system-message-container">
+	</div>
+
+					<div class="item-page" itemscope itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="fr-FR" />
+
+
+
+
+
+
+
+				<div itemprop="articleBody">
+		<h1 style="text-align: left;">NSI - Numérique et Sciences Informatiques</h1>
+<h1 style="text-align: left;"><br /><strong><strong>HTML (HyperText Markup Language) , <br />PHP <strong>Hypertext Preprocessor<br /></strong>et Interation Client-Serveur : </strong>Exercices et applications</strong></h1>
+<hr />
+<h2 style="text-align: left;">Prérequis au TD</h2>
+<ol>
+<li>Il faut impérativement avoir un environnement de travail PHP, c'est à dire un site Web ou un serveur installé sur votre ordinateur pour effectuer ce TD.<br />Consulter si ce n'est pas le cas la page : <a href="/lycee/nsi-1ere/nsi-1ere/146-pedagogie/lycee/nsi/998-nsi-numerique-et-sciences-informatiques-php-et-interation-client-serveur-presentation.html">PHP et Interation Client-Serveur : installation</a>.<br /><br /></li>
+<li> Pour nous entrainer nous utiliserons <a href="https://replit.com">https://replit.com</a> en choisissant <strong>PHP Web server</strong>. <br/><br/>
+<li>Il est par ailleurs nécessaire d'avoir traité le <strong>TD sur le Javascript</strong> : <a href="/lycee/nsi-1ere/nsi-1ere/146-pedagogie/lycee/nsi/993-nsi-numerique-et-sciences-informatiques-javascript-et-html.html">HTML (HyperText Markup Language) et Javascript</a></li>
+
+</ol>
+<p>&nbsp;</p>
+<h2>1. Programmer en PHP</h2>
+<?php
+	echo 'L adresse IP de l utilisateur est : '.$_SERVER['REMOTE_ADDR'];
+?>
+<h3>Quelques remarques sur les fonctions, les structures conditionnels en PHP</h3>
+<ul>
+<ul>
+<li>Les <strong>fonctions en PHP</strong> fonctionnent comme en Javascript. Le mot clé <code data-claire-semantic="text">function</code> permet de définir une fonction.</li>
+<li>Les paramètres sont écrits entre parenthèses précédés du symbole <code data-claire-semantic="text">$</code> comme toute les variables.</li>
+<li>Le mot clé <code data-claire-semantic="text">return</code> permet de renvoyer une valeur.</li>
+<li>Il existe de nombreuses<strong> fonctions intégrées en PHP</strong> vous pouvez consulter ces sites de références au fur et à mesure des besoins.<br />
+<ul>
+<li>Liste des <a href="http://www.conseil-webmaster.com/formation/php/recapitulatif-sur-fonctions-php.php">fonctions PHP</a> ;</li>
+<li>Un tutoriel : <a href="https://www.w3schools.com/php/php_functions.asp">https://www.w3schools.com/php/php_functions.asp</a></li>
+<li>Un cours sur Openclassrooms : <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/912352-les-fonctions">https://openclassrooms.com</a></li>
+</ul>
+</li>
+<li>De même les <strong>structures conditionnelles</strong> <code data-claire-semantic="text">if</code> et <code data-claire-semantic="text">if else</code> fonctionnent comment en <strong>Javascript</strong>.<br />&nbsp;</li>
+<li>Par exemple cette fonction renvoie le maximum des deux nombres</li>
+<!-- HTML generated using hilite.me --></ul>
+</ul>
+<div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #557799;">&lt;?php</span>
+  <span style="color: #008800; font-weight: bold;">function</span> <span style="color: #0066bb; font-weight: bold;">maximum</span>(<span style="color: #996633;">$a</span>,<span style="color: #996633;">$b</span>)
+{
+<span style="color: #008800; font-weight: bold;">if</span> (<span style="color: #996633;">$a</span><span style="color: #333333;">&gt;</span><span style="color: #996633;">$b</span>)
+    <span style="color: #008800; font-weight: bold;">return</span> <span style="color: #996633;">$a</span>;
+<span style="color: #008800; font-weight: bold;">else</span>
+    <span style="color: #008800; font-weight: bold;">return</span> <span style="color: #996633;">$b</span>;
+}
+<span style="color: #557799;">?&gt;</span>
+
+</pre>
+</div>
+<p>&nbsp;</p>
+<ul>
+<li>De même les <strong>structures itératives, les boucles</strong> <code data-claire-semantic="text">for</code> et <code data-claire-semantic="text">while</code> fonctionnent comment en <strong>Javascript</strong>.</li>
+</ul>
+<h3>Un exemple</h3>
+<p>L'exemple ci-dessous se sert d'une boucle for pour afficher un tableau à l'écran avec une boucles <code data-claire-semantic="text">for</code> et une boucle <code data-claire-semantic="text">while</code> . C'est magique.</p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;">&lt;head&gt;
+  &lt;title&gt;
+   PHP - Exemple 2
+  &lt;/title&gt;
+  &lt;meta charset="utf-8"/&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;h1&gt; PHP - Exemple 2 &lt;/h1&gt;
+ &lt;table border="1"&gt;
+  &lt;tr&gt;
+   <span style="color: #557799;">&lt;?php</span>
+   <span style="color: #008800; font-weight: bold;">for</span>(<span style="color: #996633;">$i</span><span style="color: #333333;">=</span><span style="color: #0000dd; font-weight: bold;">1</span>;<span style="color: #996633;">$i</span><span style="color: #333333;">&lt;=</span><span style="color: #0000dd; font-weight: bold;">10</span>;<span style="color: #996633;">$i</span><span style="color: #333333;">=</span><span style="color: #996633;">$i</span><span style="color: #333333;">+</span><span style="color: #0000dd; font-weight: bold;">1</span>) <span style="color: #888888;">// ou ($i=1;$i&lt;=10;$i++)</span>
+   {
+    <span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;td&gt;</span><span style="background-color: #eeeeee;">$i</span><span style="background-color: #fff0f0;">&lt;/td&gt;"</span>;
+   }
+   <span style="color: #557799;">?&gt;</span>
+  &lt;/tr&gt;
+ &lt;/table&gt;
+
+ &lt;p&gt; &lt;/p&gt;
+
+ &lt;table border="2"&gt;
+  &lt;tr&gt;
+   <span style="color: #557799;">&lt;?php</span>
+   <span style="color: #996633;">$i</span> <span style="color: #333333;">=</span> <span style="color: #0000dd; font-weight: bold;">1</span>;
+   <span style="color: #008800; font-weight: bold;">while</span> (<span style="color: #996633;">$i</span> <span style="color: #333333;">&lt;=</span> <span style="color: #0000dd; font-weight: bold;">10</span>)
+   {
+    <span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;td&gt;</span><span style="background-color: #eeeeee;">$i</span><span style="background-color: #fff0f0;">&lt;/td&gt;"</span>;
+	<span style="color: #996633;">$i</span><span style="color: #333333;">=</span><span style="color: #996633;">$i</span><span style="color: #333333;">+</span><span style="color: #0000dd; font-weight: bold;">1</span>;
+	}
+   <span style="color: #557799;">?&gt;</span>
+  &lt;/tr&gt;
+ &lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<ul>
+<li>&nbsp;Lien vers le fichier <strong>.php</strong> sur le serveur : <a href="/images/pdf/NSI/premiere/html-premiere/docphp/PHP-Exemple2.php">PHP-exemple2</a> / <a href="/images/pdf/NSI/premiere/html-premiere/docphp/PHP-Exemple2.tex">Code source</a>.</li>
+</ul>
+<p>&nbsp;</p>
+<blockquote>
+<p><strong>Exercice 1</strong> <br />La fonction <code data-claire-semantic="text">rand(a,b)</code> renvoie un entier aléatoire compris entre a et b.<br />1. Ecrire un script qui choisit aléatoirement un nombre entre 1 et 15.<br />2. Et qui affiche le table de multiplication de ce nombre dans un tableau.<br /><em>Toute amélioration est la bienvenue</em>.</p>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+<p><strong>Exercice 2</strong> <br />La fonction <code data-claire-semantic="text">rand(a,b)</code> renvoie un entier aléatoire compris entre a et b.<br />Ecrire un script en php qui : <br />1. choisit 100 nombres aléatoires entre 0 et 100 ;<br />2. les affiche&nbsp; ;<br />3. et affiche leur moyenne.<br /><em>Toute amélioration est la bienvenue</em>.</p>
+</blockquote>
+<p>&nbsp;</p>
+<h2>2. Interagir avec une page en PHP : les méthodes GET et POST</h2>
+<p>Un script PHP s'exécute sur le serveur lorsque l'utilisateur accède à un fichier par un lien. Ce script effectue un certain nombre d'instructions pour produire la page web demandée et s'arrête lorsque celle-ci est produite.<br />Comment faisons-nous pour passer une information d'une page à l'autre ? De l'utilisateur à la page .PHP ?</p>
+<p>Par exemple, si je saisi mon compte utilisateur sur un site et qu'en cliquant je suis conduis vers la page de mon compte, comment cette page se souvient-elle du nom que j'ai écrit dans la page précédente ?</p>
+<p>Il existe plusieurs solutions pour transmettre des informations d'une page aux autres :</p>
+<ul>
+<li>Cookies ;</li>
+<li>base de données ;</li>
+<li>fichiers textes ;</li>
+<li>la méthode&nbsp; GET ;</li>
+<li>la méthode POST.</li>
+</ul>
+<p>Nous allons étudier les <strong>méthodes GET et POST</strong>.</p>
+<p>&nbsp;</p>
+<h3>2a. La méthode GET<br />Interagir avec une page en PHP avec la méthode GET</h3>
+<ul>
+<li>Vous pouvez consulter le cours sur <strong>openclassroom</strong> : <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql/912799-transmettez-des-donnees-avec-lurl">https://openclassrooms.com</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>Les variables ne transitent pas toujours via un formulaire mais bien souvent <strong>par l'URL via la méthode GET</strong>.</p>
+<p>L'<strong>URL (Uniform Resource Locator)</strong> sert à représenter une adresse sur le web comme celle du site <a href="http://www.math93.com">www.math93.com</a>.</p>
+<p>Par exemple, après avoir fait une recherche sur <strong>Google</strong>, par exemple avec<strong> math93</strong>, la barre d'adresse contient une URL longue qui ressemble à ceci :</p>
+<p><a class="jcepopup" href="/images/images_doc/nsi/recherche-google.JPG" type="image/jpeg" data-mediabox="1" data-mediabox-title="Recherche GOOGLE"><img style="display: block; margin-left: auto; margin-right: auto;" title="Recherche GOOGLE" src="/images/images_doc/nsi/recherche-google.JPG" alt="recherche google" width="951" height="131" data-mce-width="951" data-mce-height="131" /></a></p>
+<ul>
+<li>Essayer : <a href="https://www.google.com/search?sxsrf=ALeKk01eKiIP9qhSb8R2jKLKtBJjMaM-Jg%3A1587394390515&amp;source=hp&amp;ei=VredXvuJHYnYaLfEtKAN&amp;q=math93&amp;oq=math93&amp;gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgQIABBDOgUIABCDAToGCCMQJxATOgQIABAKUIcKWJ0TYOAaaAFwAHgAgAGEAYgBsAOSAQM0LjKYAQCgAQGqAQdnd3Mtd2l6&amp;sclient=psy-ab&amp;ved=0ahUKEwj7jI32oPfoAhUJLBoKHTciDdQQ4dUDCAY&amp;uact=5">recherche Google math93</a></li>
+</ul>
+<p>Dans cet exemple, les informations après le point d'interrogation sont des <strong>données que l'on fait transiter d'une page à une autre</strong>.</p>
+<h4>2a1. Former une URL pour envoyer des paramètres<a href="/URL"> </a></h4>
+<p>Imaginons que votre site s'appelle <strong>math93.com</strong> et que vous avez une page PHP intitulée <strong>bonjour.php</strong>. Pour accéder à cette page, vous devez aller à l'URL suivante :</p>
+<p style="text-align: center;"><strong>http://www.<strong>math93.com</strong>/bonjour.php</strong></p>
+<p>Pour envoyer des informations à la page <strong>bonjour.php</strong>, on va ajouter des informations à la fin de l'URL, comme ceci :</p>
+<p style="text-align: center;"><a class="jcepopup" href="/images/images_doc/nsi/php-adresse-get.JPG" type="image/jpeg" data-mediabox="1" data-mediabox-title="PHP : la méthode GET"><img style="width: 503px; height: 207px;" title="PHP : la méthode GET" src="/images/images_doc/nsi/php-adresse-get.JPG" alt="php adresse get" data-mce-width="503" data-mce-height="207" /></a><span style="color: #000000;"> </span><span style="color: #339966;"></span></p>
+<ul>
+<li>On écrit les <span style="color: #0000ff;"><strong>variables</strong></span> et les<strong><span style="color: #008000;"> valeurs</span></strong> des variables après un point d'intérogation <code data-claire-semantic="text">?</code> .</li>
+<li>On sépare les variables par le symbole <code data-claire-semantic="text">&amp;</code> .</li>
+<li>La seule limite est la longueur de l'URL. En général il n'est pas conseillé de dépasser les <strong>256 caractères</strong>.</li>
+</ul>
+<p>&nbsp;</p>
+<h4>2a2. Récupérer les valeurs des variables</h4>
+<p>Nous avons fait un lien vers le fichier php <strong>bonjour.php</strong><span style="color: #000000;"></span> et à deux variables <strong><span style="color: #000000;"><span style="color: #0000ff;">nom</span></span><span style="color: #ff0000;"> et <span style="color: #0000ff;">prenom</span></span></strong><span style="color: #000000;">.</span><span style="color: #0000ff;"> </span></p>
+<p style="text-align: center;"><strong><span style="color: #000000;"><strong>bonjour.php</strong>?<span style="color: #0000ff;">nom</span></span><span style="color: #0000ff;">=</span><span style="color: #339966;">Galois</span><span style="color: #ff0000;">&amp;<span style="color: #0000ff;">prenom</span></span><span style="color: #0000ff;">=</span><span style="color: #339966;">Evariste</span></strong></p>
+<p>Pour récupérer les valeurs des variables, on y accède via la variable<strong> $_GET</strong>.</p>
+<ul>
+<li><code data-claire-semantic="text">$_GET['nom']</code> .&nbsp;&nbsp;&nbsp;&nbsp; à la valeur <span style="color: #339966;">Galois</span> ; <span style="font-size: 18pt;">&nbsp; <br /></span></li>
+<li><code data-claire-semantic="text">$_GET['prenom']</code> .&nbsp; à la valeur <span style="color: #339966;">Evariste</span> ;</li>
+</ul>
+<p>&nbsp;</p>
+<p>Par exemple on a ici avec le petit code en écrivant dant la console :</p>
+<ul>
+<li><a href="/bonjour.php">https://www.math93.com/bonjour.php</a></li>
+<li><a href="/bonjour.php?nom=Evariste&amp;prenom=Galois">https://www.math93.com/bonjour.php?nom=Evariste&amp;prenom=Galois</a></li>
+</ul>
+<p>Essayer de changer les noms et prénoms dans l'adresse URL.</p>
+<p>&nbsp;</p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;">&lt;head&gt;
+  &lt;title&gt;
+   PHP - Exemple 3
+  &lt;/title&gt;
+  &lt;meta charset="utf-8"/&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;h1&gt; PHP - Exemple 3 &lt;/h1&gt;
+ <span style="color: #557799;">&lt;?php</span>
+ <span style="color: #888888;">// les variables existent-t-elles ?</span>
+ <span style="color: #008800; font-weight: bold;">if</span>(<span style="color: #007020;">isset</span>(<span style="color: #996633;">$_GET</span>[<span style="background-color: #fff0f0;">'nom'</span>]) <span style="color: #008800; font-weight: bold;">and</span> <span style="color: #007020;">isset</span>(<span style="color: #996633;">$_GET</span>[<span style="background-color: #fff0f0;">'prenom'</span>]))
+ {<span style="color: #888888;">// oui les variables existent </span>
+    <span style="color: #996633;">$lenom</span><span style="color: #333333;">=</span><span style="color: #996633;">$_GET</span>[<span style="background-color: #fff0f0;">'nom'</span>];
+    <span style="color: #996633;">$leprenom</span><span style="color: #333333;">=</span><span style="color: #996633;">$_GET</span>[<span style="background-color: #fff0f0;">'prenom'</span>];
+    <span style="color: #888888;">//echo "&lt;p&gt;Bonjour $_GET['prenom'] et $_GET['nom'] !&lt;/p&gt;" ;</span>
+    <span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;p&gt;Bonjour </span><span style="background-color: #eeeeee;">$leprenom</span><span style="background-color: #fff0f0;">   </span><span style="background-color: #eeeeee;">$lenom</span><span style="background-color: #fff0f0;">&lt;/p&gt;"</span> ;
+ }
+ <span style="color: #008800; font-weight: bold;">else</span>
+ {
+    <span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;p&gt;Bonjour Madame ou Monsieur.&lt;/p&gt;"</span> ;
+ }
+ <span style="color: #557799;">?&gt;</span>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<p>&nbsp;</p>
+<ul>
+<li><span style="text-decoration: underline;">Remarque</span> :&nbsp; <code data-claire-semantic="text">isset(var)</code>&nbsp;&nbsp; - Détermine si la variable <code data-claire-semantic="text">var</code> est déclarée et est différente de NULL.</li>
+</ul>
+<p>&nbsp;</p>
+<blockquote>
+<p><strong>Exercice 3</strong> <br />1. Ecrire une page qui prend deux nombres dans l'URL et affiche leur somme.<br />2. Modifier la page pour donner trois paramètres dans l'URL, deux nombres et une opération. Le résultat de l'opération sera affiché dans la page.<br /><em>Toute amélioration est la bienvenue</em>.</p>
+<a href="https://replit.com/join/hzvggtqhbh-jcourtois">Correction</a></blockquote>
+<p>&nbsp;</p>
+<blockquote>
+<p><strong>Exercice 4</strong> <br />1. Ecrire deux pages, la première choisissant un nombre au hasard entre -10 et 10 <br />2. et contenant un lien vers la seconde qui affichera la racine carrée du nombre choisi, si cela est possible.<br /><em>Toute amélioration est la bienvenue</em>.</p>
+<a href="https://replit.com/join/xddgesncil-jcourtois">Correction</a></blockquote>
+<p>&nbsp;</p>
+<h3>2a. La méthode POST<br />Interagir avec une page en PHP avec la méthode POST</h3>
+<p>Il existe une autre méthode pour passer des données d'une page à l'autre sans mentionner les valeurs dans l'URL.</p>
+<p>Il s'agit de la méthode utilisée dans les formulaires</p>
+<h4>Un exemple</h4>
+<p>Reprenons l'exemple 3 avec le nom et le prénom.</p>
+<ol>
+<li>On va donc écrire deux pages, la première une page HTML que l'on va nommer ex4-HTML.html, et la deuxième une page PHP l'on va nommer ex4-PHP.php</li>
+<li>Afin de pouvoir accéder aux contenus envoyés par la méthode POST, il faut donner à chaque élément dont on veut récuperer les valeurs l'attribut <code data-claire-semantic="text">name</code>&nbsp;&nbsp; .</li>
+<li>Pour récupérer les valeurs des variables, on y accède via la variable<strong> $_POST</strong>.</li>
+</ol>
+<ul>
+<li><span><code data-claire-semantic="text">$_POST['nom']</code> .&nbsp;&nbsp;&nbsp;&nbsp; à la valeur <span style="color: #339966;">du nom entré</span> ; </span><span>&nbsp;&nbsp; <br /></span></li>
+<li><span><code data-claire-semantic="text">$_POST['prenom']</code> .&nbsp; à la valeur <span style="color: #339966;">du prénom entré</span> ;</span></li>
+</ul>
+<p>&nbsp;</p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #557799;">&lt;!doctype html&gt;</span>
+<span style="color: #007700;">&lt;html&gt;</span>
+<span style="color: #007700;">&lt;head&gt;</span>
+  <span style="color: #007700;">&lt;title&gt;</span>
+   PHP - Exemple 4 - Méthode POST Fichier HTML
+  <span style="color: #007700;">&lt;/title&gt;</span>
+  <span style="color: #007700;">&lt;meta</span> <span style="color: #0000cc;">charset=</span><span style="background-color: #fff0f0;">"utf-8"</span><span style="color: #007700;">/&gt;</span>
+ <span style="color: #007700;">&lt;/head&gt;</span>
+ <span style="color: #007700;">&lt;body&gt;</span>
+ <span style="color: #007700;">&lt;h1&gt;</span> PHP - Exemple 4 - Méthode POST Fichier HTML<span style="color: #007700;">&lt;/h1&gt;</span>
+  <span style="color: #007700;">&lt;form</span> <span style="color: #0000cc;">action=</span><span style="background-color: #fff0f0;">"ex4-PHP.php"</span> <span style="color: #0000cc;">method=</span><span style="background-color: #fff0f0;">"post"</span><span style="color: #007700;">&gt;</span>
+  <span style="color: #007700;">&lt;label</span> <span style="color: #0000cc;">for=</span><span style="background-color: #fff0f0;">"nom"</span><span style="color: #007700;">&gt;</span>Votre Nom :<span style="color: #007700;">&lt;/label&gt;</span>
+  <span style="color: #007700;">&lt;input</span> <span style="color: #0000cc;">type=</span><span style="background-color: #fff0f0;">"text"</span> <span style="color: #0000cc;">name=</span><span style="background-color: #fff0f0;">"nom"</span><span style="color: #007700;">&gt;</span>
+  <span style="color: #007700;">&lt;div&gt;</span> et <span style="color: #007700;">&lt;/div&gt;</span>
+  <span style="color: #007700;">&lt;label</span> <span style="color: #0000cc;">for=</span><span style="background-color: #fff0f0;">"prenom"</span><span style="color: #007700;">&gt;</span>Votre Prénom :<span style="color: #007700;">&lt;/label&gt;</span>
+  <span style="color: #007700;">&lt;input</span> <span style="color: #0000cc;">type=</span><span style="background-color: #fff0f0;">"text"</span> <span style="color: #0000cc;">name=</span><span style="background-color: #fff0f0;">"prenom"</span><span style="color: #007700;">&gt;</span>
+  <span style="color: #007700;">&lt;input</span> <span style="color: #0000cc;">type=</span><span style="background-color: #fff0f0;">"submit"</span> <span style="color: #0000cc;">value=</span><span style="background-color: #fff0f0;">"Valider"</span><span style="color: #007700;">&gt;</span>
+  <span style="color: #007700;">&lt;/form&gt;</span>
+<span style="color: #007700;">&lt;/body&gt;</span>
+<span style="color: #007700;">&lt;/html&gt;</span>
+</pre>
+</div>
+<p>&nbsp;</p>
+<!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;
+   PHP - Exemple 4 - Méthode POST Fichier PHP
+  &lt;/title&gt;
+  &lt;meta charset="utf-8"/&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;h1&gt; PHP - Exemple 4 - Méthode POST Fichier PHP &lt;/h1&gt;
+ <span style="color: #557799;">&lt;?php</span>
+ <span style="color: #888888;">// les variables existent-t-elles ?</span>
+ <span style="color: #008800; font-weight: bold;">if</span>(<span style="color: #007020;">isset</span>(<span style="color: #996633;">$_POST</span>[<span style="background-color: #fff0f0;">'nom'</span>]) <span style="color: #008800; font-weight: bold;">and</span> <span style="color: #007020;">isset</span>(<span style="color: #996633;">$_POST</span>[<span style="background-color: #fff0f0;">'prenom'</span>]))
+ {<span style="color: #888888;">// oui les variables existent </span>
+    <span style="color: #996633;">$lenom</span><span style="color: #333333;">=</span><span style="color: #996633;">$_POST</span>[<span style="background-color: #fff0f0;">'nom'</span>];
+    <span style="color: #996633;">$leprenom</span><span style="color: #333333;">=</span><span style="color: #996633;">$_POST</span>[<span style="background-color: #fff0f0;">'prenom'</span>];
+    <span style="color: #888888;">//echo "&lt;p&gt;Bonjour $_POST['prenom']   et $_POST['nom'] !&lt;/p&gt;" ;</span>
+    <span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;p&gt;Bonjour </span><span style="background-color: #eeeeee;">$leprenom</span><span style="background-color: #fff0f0;">    </span><span style="background-color: #eeeeee;">$lenom</span><span style="background-color: #fff0f0;">&lt;/p&gt;"</span> ;
+ }
+ <span style="color: #008800; font-weight: bold;">else</span>
+ {
+	<span style="color: #008800; font-weight: bold;">echo</span> <span style="background-color: #fff0f0;">"&lt;p&gt;Bonjour Madame ou Monsieur.&lt;/p&gt;"</span> ;
+ }
+ <span style="color: #557799;">?&gt;</span>
+&lt;/body&gt;
+</pre>
+</div>
+<p>&nbsp;</p>
+<ul>
+<li>Lien vers le fichier <strong>.html</strong> sur le serveur : <a href="/images/pdf/NSI/premiere/html-premiere/docphp/ex4-HTML.html">ex4-HTML.html</a> .</li>
+<li><span style="text-decoration: underline;">Remarque</span> : Tous les paramètres de <code data-claire-semantic="text">input</code> : <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input">https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input</a></li>
+</ul>
+<p>&nbsp;</p>
+<blockquote>
+<p><strong>Exercice 5</strong> <br />Reprendre les exercices 3 et 4 mais en utilisant la méthode POST et un formulaire.<br /><em>Toute amélioration est la bienvenue</em>.</p>
+
+/ <a href="https://replit.com/join/ybgtwreorj-jcourtois"> correction</a>.
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+
+
+<p><strong>Projet : un QCM</strong> <br />1. Ecrire deux pages, la première contenant un QCM avec au moins une dizaine de questions: La moitié sur la NSI et l'autre moitié sur le Lycée Victor Duruy.<br />2. Les réponses seront proposées et l'utilisateur devra faire son choix par des cases à cocher.<br />3. La seconde page affichera le score obtenu.<br />Aide : Pour récupérer l'information "case cochée, c'est assez simple : la variable n'existe dans le post que si la case a été cochée.<br /><em>Toute amélioration est la bienvenue</em>.</p>
+</blockquote>
+<p>&nbsp;</p>
+<h2 style="text-align: left;">Articles Connexes&nbsp;</h2>
+<hr />
+<p><ul class="relateditems">
+<li>
+	<a href="/lycee/nsi-1ere/nsi-1ere/146-pedagogie/lycee/nsi/998-nsi-numerique-et-sciences-informatiques-php-et-interation-client-serveur-presentation.html">
+				NSI (Numérique et Sciences Informatiques) : PHP et Interation Client-Serveur : Présentation</a>
+</li>
+</ul>
+</p>	</div>
+
+
+							<script>var shareWidget = new OpenSocialShare();shareWidget.init({isHorizontalLayout: 0,widgetIconSize: "32",widgetStyle: "square",isEmailContentReadOnly: true,isShortenUrl: true,isTotalShare: true,isOpenSingleWindow: true,theme: 'OpenSocialShareDefaultTheme',providers: { top: ["facebook","twitter","pinterest","googleplus","linkedin"]}});shareWidget.injectInterface(".openSocialShareVerticalSharing");shareWidget.setWidgetTheme(".openSocialShareVerticalSharing");</script></div>
+
+
+					<!-- End Content -->
+				</main>
+									<div id="aside" class="span3">
+						<!-- Begin Right Sidebar -->
+
+						<!-- End Right Sidebar -->
+					</div>
+							</div>
+		</div>
+	</div>
+	<!-- Footer -->
+
+</body>
+</html>

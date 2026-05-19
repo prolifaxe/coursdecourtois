@@ -1,0 +1,114 @@
+/**************************************/
+/* CSS pour l'insertion de code XHTML */
+/**************************************/
+
+/**************************************/
+/*  pour utiliser ce style ouvrir le  */
+/*  code xhtml à insérer dans emacs,  */
+/*  htmlize-buffer le code,           */
+/*  récupérer le résultat entre les   */
+/*  balises <pre></pre>               */
+/*  et le coller dans la page         */
+/**************************************/
+
+pre.code-xhtml {
+                 color: #000000;
+                 background-color: rgb(215, 230, 255);
+                 padding:0.5em;
+                 font-size:small;
+				 margin-right:10%;
+                 font-family: courier, "courier new", monospace;
+                 border:1px dotted #111111;
+              }
+
+.nxml-attribute-colon {
+                        color:green;
+                        }
+
+
+.nxml-attribute-local-name {
+                             color:green;
+                             }
+
+.nxml-attribute-prefix {
+                         color:green;
+                         }
+
+.nxml-attribute-value {
+                        color:red;
+                        }
+
+.nxml-attribute-value-delimiter {
+                                  color:blue;
+                                  font-weight:bold;
+                                  }
+
+.nxml-comment-content {
+                        /* nxml-comment-content-face */
+                        color:rgb(100, 100, 100);
+                        font-style: italic;
+                        }
+
+.nxml-comment-delimiter {
+                          color:gray;
+                          color:rgb(100, 100, 100);
+                          }
+
+.nxml-element-local-name {
+                           color:green;
+                           font-weight:bold;
+                           }
+
+.nxml-entity-ref-delimiter {
+
+                             }
+
+.nxml-entity-ref-name {
+                        }
+
+
+.nxml-markup-declaration-delimiter {
+                                     }
+
+.nxml-namespace-attribute-value {
+                                  color:red;
+                                  }
+
+.nxml-namespace-attribute-value-delimiter {
+                                            color:blue;
+                                            font-weight:bold;
+                                            }
+
+.nxml-namespace-attribute-xmlns {
+      }
+
+
+.nxml-prolog-keyword {
+                       color:green;
+                       }
+
+.nxml-prolog-literal-content {
+                               color:green;
+                               }
+
+.nxml-prolog-literal-delimiter {
+                                 color:blue;
+								 font-weight:bold;
+                                 }
+
+.nxml-tag-delimiter {
+                      font-weight:bold;
+                      }
+.nxml-tag-slash {
+                  font-weight:bold;
+                  }
+
+.nxml-text {
+             }
+
+
+.rng-error {
+             /* rng-error-face */
+             /*text-decoration: underline;*/
+             }
+

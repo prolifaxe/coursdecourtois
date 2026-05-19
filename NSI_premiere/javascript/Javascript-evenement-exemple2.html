@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+
+<html>
+<head>
+    <title>Les évènements en javaScript : Exemple 2</title>
+</head>
+<body>
+	<p id="montexte">Dans cet autre exemple, la couleur du fond d'écran change quand on clique sur un bouton et la couleur du texte sur un autre bouton<p>
+	<input type ="button" value="Changer de couleur Fond" onclick="ChangementCouleurFond()"/>
+	<input type ="button" value="Changer de couleur Texte" onclick="ChangementCouleurTexte()"/>
+
+	<script>
+	function ChangementCouleurFond()
+	{
+	   const couleur=document.body.style.backgroundColor; // on charge la couleur du fond, const pour déclarer variables (avec let) remplace var
+	   alert("Vous m'avez cliqué ! On change de couleur = " + couleur);
+	   if (couleur=='ivory')
+	      {document.body.style.backgroundColor = 'orange';}
+	   else
+	      {document.body.style.backgroundColor = 'ivory';}
+
+	}
+	function ChangementCouleurTexte()
+	{
+	   const couleur=document.getElementById('montexte').style.color; // on charge la couleur du exte, const pour déclarer variables (avec let) remplace var
+	   alert("Vous m'avez cliqué ! On change de couleur = " + couleur);
+	   if (couleur=='red')
+	      {document.getElementById('montexte').style.color= 'green';}
+	   else
+	      {document.getElementById('montexte').style.color = 'red';}
+
+	}
+	</script>
+	</body>

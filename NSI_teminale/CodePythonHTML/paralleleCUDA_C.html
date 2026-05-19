@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Téléchargements/additionVecteur.cu.html</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim8.1_v1">
+<meta name="syntax" content="cuda">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+body { font-family: monospace; color: #000000; background-color: #ffffff; }
+* { font-size: 1em; }
+.PreProc { color: #c000c0; }
+.Type { color: #008000; }
+.Comment { color: #0000c0; }
+.Constant { color: #c00000; }
+.Special { color: #c000c0; }
+.Identifier { color: #008080; }
+.Statement { color: #af5f00; }
+-->
+</style>
+</head>
+<body>
+<pre id='vimCodeElement'>
+<span class="PreProc">#include </span><span class="Constant">&lt;stdio.h&gt;</span>
+<span class="PreProc">#include </span><span class="Constant">&quot;time.h&quot;</span>
+
+<span class="Comment">// Fonction d'addition de vecteurs CPU </span>
+<span class="Type">void</span> addVecteur(<span class="Type">int</span> *a,<span class="Type">int</span> *b,<span class="Type">int</span> *c,<span class="Type">int</span> L){
+	<span class="Type">int</span> i;
+	<span class="Statement">for</span>(i=<span class="Constant">0</span>;i&lt;L;i++)
+	{
+	 	c[i]=a[i]+b[i];
+	}
+}
+
+<span class="Comment">// Fonction d'addition de vecteurs GPU (Calcul paralléle)</span>
+<span class="Type">__global__</span> <span class="Type">void</span> addVecteurkernel(<span class="Type">int</span> *a,<span class="Type">int</span> *b,<span class="Type">int</span> *c,<span class="Type">int</span> L){
+	<span class="Type">int</span> idx=<span class="Identifier">threadIdx</span>.x+<span class="Identifier">blockDim</span>.x*<span class="Identifier">blockIdx</span>.x;
+	c[idx]=a[idx]+b[idx];
+}
+
+<span class="Type">int</span> main(<span class="Type">void</span>){
+
+<span class="Comment">//Déclaration des variables CPU</span>
+clock_t startCPU, endCPU;
+<span class="Type">float</span> cpu_time_used;
+ <span class="Type">int</span> i,*a,*b,*c,*result;
+ <span class="Type">int</span> *aCuda,*bCuda,*cCuda;
+ <span class="Type">int</span> BLOC=<span class="Constant">64</span>;
+ <span class="Type">int</span> NTHREAD=<span class="Constant">1024</span>;
+ <span class="Type">int</span> L=BLOC*NTHREAD;
+
+<span class="Comment">//Déclaration et allocation des tableaux CPU</span>
+ a=(<span class="Type">int</span>*)calloc(L,<span class="Statement">sizeof</span>(<span class="Type">int</span>));
+ b=(<span class="Type">int</span>*)calloc(L,<span class="Statement">sizeof</span>(<span class="Type">int</span>));
+ c=(<span class="Type">int</span>*)calloc(L,<span class="Statement">sizeof</span>(<span class="Type">int</span>));
+ result=(<span class="Type">int</span>*)calloc(L,<span class="Statement">sizeof</span>(<span class="Type">int</span>));
+
+<span class="Comment">//Déclaration et allocation des tableaux GPU aCuda,bCuda et cCuda	</span>
+ cudaMalloc(&amp;aCuda,L*<span class="Statement">sizeof</span>(<span class="Type">int</span>));
+ cudaMalloc(&amp;bCuda,L*<span class="Statement">sizeof</span>(<span class="Type">int</span>));
+ cudaMalloc(&amp;cCuda,L*<span class="Statement">sizeof</span>(<span class="Type">int</span>));
+
+<span class="Comment">// Création des évenements de mesure du temps de calcul GPU</span>
+<span class="Type">float</span> TimerV;
+
+cudaEvent_t start,stop;
+cudaEventCreate(&amp;start);
+cudaEventCreate(&amp;stop);
+
+<span class="Comment">// remplissage des tabeaux CPU </span>
+ <span class="Statement">for</span>(i=<span class="Constant">0</span>;i&lt;L;i++){
+   a[i]=i;
+   b[i]=<span class="Constant">9</span>*i;
+}
+
+<span class="Comment">//Lancement de la fonction CPU et mesure de temps de calcul</span>
+startCPU = clock();
+addVecteur(a,b,c,L);
+endCPU = clock();
+cpu_time_used = ((double) (endCPU - startCPU));
+printf(<span class="Constant">&quot;temps CPU en msec </span><span class="Special">%f</span><span class="Special">\n</span><span class="Constant">&quot;</span>,cpu_time_used<span class="Constant"></span>);
+
+<span class="Comment">//Chargement des données CPU dans le GPU (a vers aCuda,b vers bCuda,c vers cCuda)</span>
+cudaMemcpy(aCuda,a,L*<span class="Statement">sizeof</span>(<span class="Type">int</span>),<span class="Constant">cudaMemcpyHostToDevice</span>);
+cudaMemcpy(bCuda,b,L*<span class="Statement">sizeof</span>(<span class="Type">int</span>),<span class="Constant">cudaMemcpyHostToDevice</span>);
+
+<span class="Comment">//Lancement de la fonction CPU et mesure de temps de calcul</span>
+cudaEventRecord(start,<span class="Constant">0</span>);
+ 	addVecteurkernel&lt;&lt;&lt;BLOC,NTHREAD&gt;&gt;&gt;(aCuda,bCuda,cCuda,L);
+cudaEventRecord(stop,<span class="Constant">0</span>);
+cudaEventSynchronize(stop);
+cudaEventElapsedTime(&amp;TimerV, start, stop);
+
+<span class="Comment">//Copie des resultats GPU vers le CPU (cCuda vers result)</span>
+ cudaMemcpy(result,cCuda,L*<span class="Statement">sizeof</span>(<span class="Type">int</span>),<span class="Constant">cudaMemcpyDeviceToHost</span>);
+
+<span class="Comment">// Comparaison des résultats entre calculs CPU et GPU</span>
+<span class="Statement">for</span>(i=<span class="Constant">0</span>;i&lt;L;i++){
+  <span class="Statement">if</span>(result[i]!=c[i]){
+      printf(<span class="Constant">&quot;error</span><span class="Special">\n</span><span class="Constant">&quot;</span>);
+	exit(<span class="Constant">0</span>);
+  }
+}
+
+printf(<span class="Constant">&quot;temps GPU en msec </span><span class="Special">%f</span><span class="Special">\n</span><span class="Constant">&quot;</span>,TimerV);
+
+<span class="Comment">//libération des mémoires CPU</span>
+free(a);free(b);free(c);
+
+<span class="Comment">//libération des mémoires GPU</span>
+cudaFree(aCuda);cudaFree(bCuda);cudaFree(cCuda);
+
+<span class="Comment">//retour de fin de fonction</span>
+<span class="Statement">return</span> <span class="Constant">0</span>;
+}
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

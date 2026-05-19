@@ -1,0 +1,349 @@
+/*
+Theme Name:   Avant Portfolio
+Theme URI:    https://kairaweb.com/child-theme/avant-portfolio/
+Description:  Avant Portfolio is a redesigned look for the powerful multipurpose Avant theme. Easily build a professional website or eCommerce store by adding our recommended top plugins from WooCommerce to Page Builders and lots more. Avant Portfolio is beautiful, clean and comes packed with lots and lots of layout settings, full theme color settings and much more... Have fun designing your website without any coding knowledge... Avant Portfolio is the theme you want! Give it a go!
+Author:       Kaira
+Author URI:   https://kairaweb.com/
+Template:     avant
+Version:      1.0.1
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         two-columns, three-columns, left-sidebar, right-sidebar, grid-layout, flexible-header, custom-background, custom-colors, custom-menu, custom-logo, editor-style, featured-image-header, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, e-commerce, photography, portfolio
+Text Domain:  avant-portfolio
+*/
+
+/* Add custom styling from here */
+
+.site-top-bar,
+.site-top-bar-left,
+.site-top-bar-right {
+    background-color: #111;
+}
+
+.site-header {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+body.home .avant-slider-default .site-header {
+    margin: 0;
+}
+
+.home-slider-block-bg {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6)
+}
+
+body,
+.widget-area .widget a {
+    color: #636161;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.widget-area .widget-title {
+    color: #3a3a3a;
+    font-family: 'Abel', serif;
+}
+.woocommerce table.cart th,
+.woocommerce-page #content table.cart th,
+.woocommerce-page table.cart th,
+.woocommerce input.button.alt,
+.woocommerce-page #content input.button.alt,
+.woocommerce table.cart input,
+.woocommerce-page #content table.cart input,
+.woocommerce-page table.cart input,
+button, input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    font-family: 'Abel', serif;
+}
+.site-title a {
+    font-family: 'Abel', serif;
+}
+
+.site-top-border,
+#comments .form-submit #submit,
+.search-block .search-submit,
+.side-aligned-social a.social-icon,
+.no-results-btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.widget-title-style-underline-short .widget-area .widget-title:after,
+.woocommerce ul.products li.product a.add_to_cart_button, .woocommerce-page ul.products li.product a.add_to_cart_button,
+.woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale,
+.woocommerce button.button.alt,
+.woocommerce-page button.button.alt,
+.woocommerce input.button.alt:hover,
+.woocommerce-page #content input.button.alt:hover,
+.woocommerce .cart-collaterals .shipping_calculator .button,
+.woocommerce-page .cart-collaterals .shipping_calculator .button,
+.woocommerce a.button,
+.woocommerce-page a.button,
+.woocommerce input.button,
+.woocommerce-page #content input.button,
+.woocommerce-page input.button,
+.woocommerce #review_form #respond .form-submit input,
+.woocommerce-page #review_form #respond .form-submit input,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+.single-product span.onsale,
+.main-navigation.avant-nav-style-solid ul > li > a:hover,
+.main-navigation.avant-nav-style-solid ul > li.current-menu-item > a,
+.main-navigation.avant-nav-style-solid ul > li.current-menu-ancestor > a,
+.main-navigation.avant-nav-style-solid ul > li.current-menu-parent > a,
+.main-navigation.avant-nav-style-solid ul > li.current_page_parent > a,
+.main-navigation.avant-nav-style-solid ul > li.current_page_ancestor > a,
+.main-navigation.avant-nav-style-solid .current_page_item > a,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.main-navigation ul ul a:hover,
+.main-navigation ul ul li.current-menu-item > a,
+.main-navigation ul ul li.current_page_item > a,
+.main-navigation ul ul li.current-menu-parent > a,
+.main-navigation ul ul li.current_page_parent > a,
+.main-navigation ul ul li.current-menu-ancestor > a,
+.main-navigation ul ul li.current_page_ancestor > a,
+.main-navigation button,
+.wpcf7-submit,
+.wp-paginate li a:hover,
+.wp-paginate li a:active,
+.wp-paginate li .current,
+.wp-paginate.wpp-modern-grey li a:hover,
+.wp-paginate.wpp-modern-grey li .current {
+    background: inherit;
+    background-color: #000;
+}
+
+a,
+.content-area .entry-content a,
+#comments a,
+.post-edit-link,
+.site-title a,
+.error-404.not-found .page-header .page-title span,
+.search-button .fa-search,
+.header-cart-checkout.cart-has-items .fa-shopping-cart,
+.site-header-top-right .social-icon:hover,
+.site-footer-bottom-bar .social-icon:hover,
+.main-navigation.avant-nav-style-plain ul > li > a:hover,
+.main-navigation.avant-nav-style-plain ul > li.current-menu-item > a,
+.main-navigation.avant-nav-style-plain ul > li.current-menu-ancestor > a,
+.main-navigation.avant-nav-style-plain ul > li.current-menu-parent > a,
+.main-navigation.avant-nav-style-plain ul > li.current_page_parent > a,
+.main-navigation.avant-nav-style-plain ul > li.current_page_ancestor > a,
+.main-navigation.avant-nav-style-plain .current_page_item > a {
+    color: #000;
+}
+.main-navigation.avant-nav-style-underlined ul > li > a:hover,
+.main-navigation.avant-nav-style-underlined ul > li.current-menu-item > a,
+.main-navigation.avant-nav-style-underlined ul > li.current-menu-ancestor > a,
+.main-navigation.avant-nav-style-underlined ul > li.current-menu-parent > a,
+.main-navigation.avant-nav-style-underlined ul > li.current_page_parent > a,
+.main-navigation.avant-nav-style-underlined ul > li.current_page_ancestor > a,
+.main-navigation.avant-nav-style-underlined .current_page_item > a {
+    box-shadow: 0 -4px 0 #000 inset;
+}
+
+a:hover,
+.avant-header-nav ul li a:hover,
+.content-area .entry-content a:hover,
+.header-social .social-icon:hover,
+.widget-area .widget a:hover,
+.site-footer-widgets .widget a:hover,
+.site-footer .widget a:hover,
+.search-btn:hover,
+.search-button .fa-search:hover,
+.woocommerce #content div.product p.price,
+.woocommerce-page #content div.product p.price,
+.woocommerce-page div.product p.price,
+.woocommerce #content div.product span.price,
+.woocommerce div.product span.price,
+.woocommerce-page #content div.product span.price,
+.woocommerce-page div.product span.price,
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li.active,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active,
+.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active {
+    color: #a8a8a8;
+}
+
+.main-navigation button:hover,
+#comments .form-submit #submit:hover,
+.search-block .search-submit:hover,
+.no-results-btn:hover,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.woocommerce input.button.alt,
+.woocommerce-page #content input.button.alt,
+.woocommerce .cart-collaterals .shipping_calculator .button,
+.woocommerce-page .cart-collaterals .shipping_calculator .button,
+.woocommerce a.button:hover,
+.woocommerce-page a.button:hover,
+.woocommerce input.button:hover,
+.woocommerce-page #content input.button:hover,
+.woocommerce-page input.button:hover,
+.woocommerce ul.products li.product a.add_to_cart_button:hover, .woocommerce-page ul.products li.product a.add_to_cart_button:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce-page button.button.alt:hover,
+.woocommerce #review_form #respond .form-submit input:hover,
+.woocommerce-page #review_form #respond .form-submit input:hover,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content,
+.wpcf7-submit:hover {
+    background: inherit;
+    background-color: #a8a8a8;
+}
+/***********************************************************
+ * petits effets décoratifs sur le menu de navigation (gd écran + pt écran)
+ * *********************************************************/
+a,
+.content-area .entry-content a {
+	color: #aaaaaa;
+	text-decoration: underline;
+}
+
+a:hover,
+.content-area .entry-content a:hover {
+	color: #dddddd;
+	text-decoration: underline;
+}
+
+#primary-menu a {
+    font-family: Tahoma, Verdana, Helvetica;
+    font-weight: bold;
+}
+
+
+#primary-menu li a:hover {
+	text-decoration: underline;
+}
+
+#primary-menu>li:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 980px) {
+	#primary-menu>li:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+}
+
+/* Décommenter si la barre 'sociale Jupyter-Pad' de droite gène le menu déroulant (sur tablette)
+@media screen and (max-width: 980px) {
+    .side-aligned-social {
+        display: none;
+    }
+}
+*/
+
+.entry-content h1 { 
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 30px -45px 0px;
+  /* margin: 30px -45px 0px; */
+  padding: 10px 45px;
+  font-weight: 100;
+  background: black;
+  letter-spacing: 20px;
+}
+
+.entry-content h2 {
+	position: relative;
+	margin: 30px 10px 10px -45px;
+	padding: 6px 20px 6px 45px; 
+	color: #555;
+	background-color: #eaeaea;
+	text-shadow: 0px 1px 2px #bbb;
+	-webkit-box-shadow: 0px 2px 4px #888;
+	-moz-box-shadow: 0px 2px 4px #888;
+	box-shadow: 0px 2px 4px #888;
+}
+ 
+.entry-content h2:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+	top: 100%;
+	border-width: 5px 10px;
+	border-style: solid;
+	border-color: #666 #666 transparent transparent;
+}
+
+/*  h3.entry-title  : à voir éventuelmt !!! */
+p {
+    margin: 15px 0 5px;
+}
+
+.entry-content code {
+    display: inline;
+    background: #eeeeee;
+    border: none;
+    padding: 0px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);   
+    overflow-x: auto;
+	font-size : 1em;
+}
+
+
+/* A ajouter dans les réglages de Syntaxhighlighter, en tant que 'Additional CSS Class(es)' */
+.encadre_syntaxhighlighter {
+    border: #aaa 2px dotted;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#primary-menu li.current_page_item, #primary-menu li.current_page_parent {
+	background-color:rgba(50, 50, 50, 0.1);
+}
+
+div.site-top-bar-right, .menu-search{
+	font-size:20px;
+}
+
+.site-top-bar .social-icon, .search-btn{
+	padding: 0 20px;
+}
+
+/***********************************************************
+ * affichage des svg (demandé par le plugin 'svg-support')
+ * *********************************************************/
+img[src*='.svg']{
+	width: 100%;
+	height: auto;
+}
+
+/***********************************************************
+ * TOC latérale
+ * *********************************************************/
+/* titre de l'encadré */
+div.lwptoc_header {
+	background-color:#222;
+	color : #fff;
+	font-weight: bold;
+}
+
+/* titre h1 */
+div.lwptoc_header + div.lwptoc_items > div.lwptoc_itemWrap > div.lwptoc_item > a.lwptoc_item {
+	background-color:#999;
+	color : #fff;
+	font-weight: bold;
+}
+
+/* n° de titre */
+div.lwptoc_header + div.lwptoc_items .lwptoc_item_number {
+	color : #ccc;
+}
+
+/***********************************************************
+ * SYNTAX HIGHLIGHTER
+ * *********************************************************/
+/* couleur de l'encadré */
+.encadre_syntaxhighlighter {border-color: #ddd;}
